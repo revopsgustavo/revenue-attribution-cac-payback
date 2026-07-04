@@ -44,3 +44,17 @@ streamlit run app/streamlit_app.py
 - Analise executiva: `docs/executive_analysis.md`
 - Consultoria IA: `docs/ai_consultant_analysis.md`
 - Dicionario de metricas: `docs/metrics_dictionary.md`
+
+## Dashboard Preview
+O dashboard Streamlit fica em `app/streamlit_app.py`. Screenshots devem ser adicionados em `docs/screenshots/` antes da divulgação pública.
+
+## Data Disclaimer
+Todos os dados são sintéticos. O projeto não usa APIs externas nem dados reais. As análises são rule-based e devem ser tratadas como hipóteses para validação, não como causa raiz confirmada.
+
+## Consulting Use Case
+Este case pode ser usado como base para diagnóstico RevOps em SaaS B2B, apoiando liderança com evidências, hipóteses, perguntas de validação, responsáveis e métricas de acompanhamento.
+
+## Contact
+LinkedIn: https://www.linkedin.com/in/gustavo-worliczek-lazzarotto/  
+E-mail: gustavo.lazzaro77o@gmail.com
+

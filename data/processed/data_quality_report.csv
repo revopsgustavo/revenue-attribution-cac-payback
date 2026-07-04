@@ -1,13 +1,13 @@
 table_name,check_name,status,details
-campaigns,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\campaigns.csv
+campaigns,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\portfolio_work\revenue-attribution-cac-payback\data\processed\campaigns.csv
 campaigns,column_exists:campaign_id,pass,campaign_id
 campaigns,not_null:campaign_id,pass,campaign_id
 campaigns,column_exists:channel_id,pass,channel_id
 campaigns,not_null:channel_id,pass,channel_id
-channels,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\channels.csv
+channels,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\portfolio_work\revenue-attribution-cac-payback\data\processed\channels.csv
 channels,column_exists:channel_id,pass,channel_id
 channels,not_null:channel_id,pass,channel_id
-leads,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\leads.csv
+leads,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\portfolio_work\revenue-attribution-cac-payback\data\processed\leads.csv
 leads,column_exists:lead_id,pass,lead_id
 leads,not_null:lead_id,pass,lead_id
 leads,column_exists:channel_id,pass,channel_id
@@ -15,7 +15,7 @@ leads,not_null:channel_id,pass,channel_id
 leads,column_exists:campaign_id,pass,campaign_id
 leads,not_null:campaign_id,pass,campaign_id
 leads,column_exists:created_date,pass,created_date
-opportunities,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\opportunities.csv
+opportunities,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\portfolio_work\revenue-attribution-cac-payback\data\processed\opportunities.csv
 opportunities,column_exists:opportunity_id,pass,opportunity_id
 opportunities,not_null:opportunity_id,pass,opportunity_id
 opportunities,column_exists:lead_id,pass,lead_id
@@ -23,7 +23,7 @@ opportunities,not_null:lead_id,pass,lead_id
 opportunities,column_exists:channel_id,pass,channel_id
 opportunities,not_null:channel_id,pass,channel_id
 opportunities,column_exists:pipeline_value,pass,pipeline_value
-customers,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\customers.csv
+customers,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\portfolio_work\revenue-attribution-cac-payback\data\processed\customers.csv
 customers,column_exists:customer_id,pass,customer_id
 customers,not_null:customer_id,pass,customer_id
 customers,column_exists:lead_id,pass,lead_id
@@ -32,31 +32,31 @@ customers,column_exists:opportunity_id,pass,opportunity_id
 customers,not_null:opportunity_id,pass,opportunity_id
 customers,column_exists:acquisition_channel_id,pass,acquisition_channel_id
 customers,not_null:acquisition_channel_id,pass,acquisition_channel_id
-revenue,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\revenue.csv
+revenue,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\portfolio_work\revenue-attribution-cac-payback\data\processed\revenue.csv
 revenue,column_exists:customer_id,pass,customer_id
 revenue,not_null:customer_id,pass,customer_id
 revenue,column_exists:revenue_date,pass,revenue_date
 revenue,column_exists:new_arr,pass,new_arr
-marketing_spend,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\marketing_spend.csv
+marketing_spend,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\portfolio_work\revenue-attribution-cac-payback\data\processed\marketing_spend.csv
 marketing_spend,column_exists:campaign_id,pass,campaign_id
 marketing_spend,not_null:campaign_id,pass,campaign_id
 marketing_spend,column_exists:channel_id,pass,channel_id
 marketing_spend,not_null:channel_id,pass,channel_id
 marketing_spend,column_exists:spend_date,pass,spend_date
 marketing_spend,column_exists:spend_amount,pass,spend_amount
-touchpoints,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\touchpoints.csv
+touchpoints,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\portfolio_work\revenue-attribution-cac-payback\data\processed\touchpoints.csv
 touchpoints,column_exists:lead_id,pass,lead_id
 touchpoints,not_null:lead_id,pass,lead_id
 touchpoints,column_exists:account_id,pass,account_id
 touchpoints,not_null:account_id,pass,account_id
 touchpoints,column_exists:channel_id,pass,channel_id
 touchpoints,not_null:channel_id,pass,channel_id
-attribution_models,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\attribution_models.csv
+attribution_models,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\portfolio_work\revenue-attribution-cac-payback\data\processed\attribution_models.csv
 attribution_models,column_exists:model_name,pass,model_name
 attribution_models,column_exists:channel_id,pass,channel_id
 attribution_models,not_null:channel_id,pass,channel_id
 attribution_models,column_exists:attributed_revenue,pass,attributed_revenue
-cohorts,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\cohorts.csv
+cohorts,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\portfolio_work\revenue-attribution-cac-payback\data\processed\cohorts.csv
 cohorts,column_exists:cohort_month,pass,cohort_month
 cohorts,column_exists:acquisition_channel_id,pass,acquisition_channel_id
 cohorts,not_null:acquisition_channel_id,pass,acquisition_channel_id
