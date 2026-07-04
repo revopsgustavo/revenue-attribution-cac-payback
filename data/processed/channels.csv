@@ -1,0 +1,8 @@
+channel_id,channel_name,channel_type,spend,lead_count,mql_rate,sql_rate,opp_rate,win_rate,arr_mean,retention_rate,gross_margin,strategic_role
+ch_paid_search,Paid Search,Paid,492000,900,0.58,0.38,0.52,0.18,42000,0.86,0.76,captura de demanda
+ch_organic,Organic,Owned,87000,300,0.63,0.55,0.61,0.27,39000,0.91,0.78,demanda orgânica
+ch_referral,Referral,Earned,48000,130,0.76,0.7,0.72,0.4,48000,0.94,0.8,indicação qualificada
+ch_paid_social,Paid Social,Paid,264000,980,0.42,0.18,0.36,0.11,25000,0.75,0.7,volume pago
+ch_events,Events,Offline,372000,210,0.68,0.61,0.7,0.16,89000,0.88,0.77,enterprise pipeline
+ch_partner,Partner,Partner,138000,260,0.69,0.62,0.66,0.3,52000,0.95,0.79,ecossistema
+ch_webinar,Webinar,Owned,108000,360,0.6,0.34,0.56,0.13,33000,0.82,0.74,educação e nutrição

@@ -1,81 +1,493 @@
-opportunity_id,account_id,owner_id,opportunity_name,stage,forecast_category,probability,amount,close_date,created_date,last_stage_change_date,next_step,loss_reason
-opp_001,acct_003,usr_002,Opportunity 001,Discovery,Pipeline,0.25,20200.0,2026-07-10,2026-07-01,2026-06-26,Follow up with buyer 1,
-opp_002,acct_005,usr_003,Opportunity 002,Solution,Best Case,0.45,22400.0,2026-07-11,2026-06-28,2026-06-19,Follow up with buyer 2,
-opp_003,acct_007,usr_007,Opportunity 003,Proposal,Best Case,0.6,24600.0,2026-07-12,2026-06-25,2026-06-12,Follow up with buyer 3,
-opp_004,acct_009,usr_001,Opportunity 004,Negotiation,Best Case,0.75,26800.0,2026-07-13,2026-06-22,2026-06-05,Follow up with buyer 4,
-opp_005,acct_011,usr_002,Opportunity 005,Procurement,Commit,0.85,29000.0,,2026-06-19,2026-05-29,Follow up with buyer 5,
-opp_006,acct_013,usr_003,Opportunity 006,Contract,Commit,0.95,31200.0,2026-07-15,2026-06-16,2026-05-22,Follow up with buyer 6,
-opp_007,acct_015,usr_007,Opportunity 007,Closed Won,Closed,1.0,33400.0,2026-07-16,2026-06-13,2026-06-29,,
-opp_008,acct_017,usr_001,Opportunity 008,Negotiation,Omitted,0.0,35600.0,2026-06-25,2026-06-10,2026-06-22,Follow up with buyer 8,No budget
-opp_009,acct_019,usr_002,Opportunity 009,Prospecting,Pipeline,0.1,37800.0,2026-07-18,2026-06-07,2026-06-15,Follow up with buyer 9,
-opp_010,acct_021,usr_003,Opportunity 010,Discovery,Pipeline,0.98,40000.0,2026-07-19,2026-06-04,2026-06-08,Follow up with buyer 10,
-opp_011,acct_023,usr_007,Opportunity 011,Solution,Best Case,0.45,0.0,2026-07-20,2026-06-01,2026-06-01,Follow up with buyer 11,
-opp_012,acct_025,,Opportunity 012,Proposal,Best Case,0.6,44400.0,2026-07-21,2026-05-29,2026-05-25,Follow up with buyer 12,
-opp_013,acct_027,usr_002,Opportunity 013,Negotiation,Best Case,0.75,46600.0,2026-07-22,2026-05-26,2026-07-02,Follow up with buyer 13,
-opp_014,acct_029,usr_003,Opportunity 014,Closed Won,Closed,1.0,0.0,2026-07-23,2026-05-23,2026-06-25,Follow up with buyer 14,
-opp_015,acct_031,usr_007,Opportunity 015,Contract,Commit,0.95,51000.0,2026-07-24,2026-05-20,2026-06-18,Follow up with buyer 15,
-opp_016,acct_033,usr_001,Opportunity 016,Closed Won,Closed,1.0,53200.0,,2026-05-17,2026-06-11,Follow up with buyer 16,
-opp_017,acct_035,usr_002,Opportunity 017,Closed Lost,Omitted,0.0,55400.0,2026-07-26,2026-05-14,2026-06-04,Follow up with buyer 17,
-opp_018,acct_037,usr_003,Opportunity 018,Prospecting,Pipeline,0.1,57600.0,2026-07-27,2026-05-11,2026-05-28,,
-opp_019,acct_039,usr_007,Opportunity 019,Discovery,Pipeline,0.25,59800.0,2026-07-28,2026-05-08,2026-05-21,Follow up with buyer 19,
-opp_020,acct_041,usr_001,Opportunity 020,Solution,Best Case,0.45,62000.0,2026-07-29,2026-05-05,2026-06-28,Follow up with buyer 20,
-opp_021,acct_043,usr_002,Opportunity 021,Proposal,Best Case,0.6,64200.0,2026-07-30,2026-05-02,2026-06-21,Follow up with buyer 21,
-opp_022,acct_045,usr_003,Opportunity 022,Negotiation,Best Case,0.98,66400.0,2026-07-31,2026-04-29,2026-06-14,Follow up with buyer 22,
-opp_023,acct_002,usr_007,Opportunity 023,Procurement,Commit,0.85,68600.0,2026-08-01,2026-04-26,2026-06-07,Follow up with buyer 23,
-opp_024,acct_004,usr_001,Opportunity 024,Contract,Commit,0.95,0.0,2026-08-02,2026-04-23,2026-05-31,Follow up with buyer 24,
-opp_025,acct_006,usr_002,Opportunity 025,Closed Won,Closed,1.0,73000.0,2026-08-03,2026-04-20,2026-05-24,Follow up with buyer 25,
-opp_026,acct_008,usr_003,Opportunity 026,Negotiation,Omitted,0.0,75200.0,2026-06-07,2026-04-17,2026-07-01,Follow up with buyer 26,No budget
-opp_027,acct_010,usr_007,Opportunity 027,Prospecting,Pipeline,0.1,77400.0,2026-08-05,2026-04-14,2026-06-24,Follow up with buyer 27,
-opp_028,acct_012,usr_001,Opportunity 028,Discovery,Pipeline,0.25,79600.0,2026-08-06,2026-04-11,2026-06-17,Follow up with buyer 28,
-opp_029,acct_014,usr_002,Opportunity 029,Solution,Commit,0.45,81800.0,2026-08-07,2026-04-08,2026-06-10,Follow up with buyer 29,
-opp_030,acct_016,usr_003,Opportunity 030,Proposal,Best Case,0.6,84000.0,2026-08-08,2026-07-04,2026-06-03,Follow up with buyer 30,
-opp_031,acct_018,usr_007,Opportunity 031,Negotiation,Best Case,0.75,86200.0,2026-08-09,2026-07-01,2026-05-27,Follow up with buyer 31,
-opp_032,acct_020,usr_001,Opportunity 032,Procurement,Commit,0.85,88400.0,2026-08-10,2026-06-28,2026-05-20,,
-opp_033,acct_022,,Opportunity 033,Contract,Commit,0.95,90600.0,2026-08-11,2026-06-25,2026-06-27,Follow up with buyer 33,
-opp_034,acct_024,usr_003,Opportunity 034,Closed Won,Closed,1.0,92800.0,2026-08-12,2026-06-22,2026-06-20,Follow up with buyer 34,
-opp_035,acct_026,usr_007,Opportunity 035,Closed Lost,Omitted,0.0,95000.0,2026-08-13,2026-06-19,2026-06-13,Follow up with buyer 35,
-opp_036,acct_028,usr_001,Opportunity 036,Prospecting,Pipeline,0.1,97200.0,2026-08-14,2026-06-16,2026-06-06,Follow up with buyer 36,
-opp_037,acct_030,usr_002,Opportunity 037,Discovery,Pipeline,0.25,99400.0,,2026-06-13,2026-05-30,Follow up with buyer 37,
-opp_038,acct_032,usr_003,Opportunity 038,Solution,Best Case,0.45,101600.0,2026-08-16,2026-06-10,2026-05-23,Follow up with buyer 38,
-opp_039,acct_034,usr_007,Opportunity 039,Proposal,Best Case,0.6,103800.0,2026-08-17,2026-06-07,2026-06-30,Follow up with buyer 39,
-opp_040,acct_036,usr_001,Opportunity 040,Negotiation,Best Case,0.75,0.0,2026-08-18,2026-06-04,2026-06-23,Follow up with buyer 40,
-opp_041,acct_038,usr_002,Opportunity 041,Closed Won,Closed,1.0,0.0,2026-08-19,2026-06-01,2026-06-16,Follow up with buyer 41,
-opp_042,acct_040,usr_003,Opportunity 042,Contract,Commit,0.95,110400.0,2026-08-20,2026-05-29,2026-06-09,Follow up with buyer 42,
-opp_043,acct_042,usr_007,Opportunity 043,Closed Won,Closed,0.98,112600.0,2026-08-21,2026-05-26,2026-06-02,Follow up with buyer 43,
-opp_044,acct_044,usr_001,Opportunity 044,Closed Lost,Omitted,0.0,114800.0,2026-08-22,2026-05-23,2026-05-26,Follow up with buyer 44,No budget
-opp_045,acct_001,usr_002,Opportunity 045,Prospecting,Pipeline,0.1,117000.0,2026-08-23,2026-05-20,2026-07-03,Follow up with buyer 45,
-opp_046,acct_003,usr_003,Opportunity 046,Discovery,Pipeline,0.25,119200.0,2026-08-24,2026-05-17,2026-06-26,Follow up with buyer 46,
-opp_047,acct_005,usr_007,Opportunity 047,Solution,Commit,0.45,121400.0,2026-08-25,2026-05-14,2026-06-19,Follow up with buyer 47,
-opp_048,acct_007,usr_001,Opportunity 048,Proposal,Best Case,0.6,123600.0,2026-08-26,2026-05-11,2026-06-12,,
-opp_049,acct_009,usr_002,Opportunity 049,Negotiation,Best Case,0.75,125800.0,2026-08-27,2026-05-08,2026-06-05,Follow up with buyer 49,
-opp_050,acct_011,usr_003,Opportunity 050,Procurement,Commit,0.85,128000.0,2026-08-28,2026-05-05,2026-05-29,Follow up with buyer 50,
-opp_051,acct_013,usr_007,Opportunity 051,Contract,Commit,0.95,130200.0,2026-08-29,2026-05-02,2026-05-22,Follow up with buyer 51,
-opp_052,acct_015,usr_001,Opportunity 052,Closed Won,Closed,1.0,132400.0,,2026-04-29,2026-06-29,Follow up with buyer 52,
-opp_053,acct_017,usr_002,Opportunity 053,Negotiation,Omitted,0.0,134600.0,2026-06-15,2026-04-26,2026-06-22,Follow up with buyer 53,No budget
-opp_054,acct_019,usr_003,Opportunity 054,Prospecting,Pipeline,0.1,136800.0,2026-09-01,2026-04-23,2026-06-15,Follow up with buyer 54,
-opp_055,acct_021,usr_007,Opportunity 055,Discovery,Pipeline,0.25,139000.0,2026-07-09,2026-04-20,2026-06-08,,
-opp_056,acct_023,usr_001,Opportunity 056,Solution,Best Case,0.45,141200.0,2026-07-10,2026-04-17,2026-06-01,Follow up with buyer 56,
-opp_057,acct_025,,Opportunity 057,Proposal,Best Case,0.6,143400.0,2026-07-11,2026-04-14,2026-05-25,Follow up with buyer 57,
-opp_058,acct_027,usr_003,Opportunity 058,Negotiation,Best Case,0.75,145600.0,2026-07-12,2026-04-11,2026-07-02,Follow up with buyer 58,
-opp_059,acct_029,usr_007,Opportunity 059,Procurement,Commit,0.98,147800.0,2026-07-13,2026-04-08,2026-06-25,Follow up with buyer 59,
-opp_060,acct_031,usr_001,Opportunity 060,Contract,Commit,0.95,150000.0,2026-07-14,2026-07-04,2026-06-18,Follow up with buyer 60,
-opp_061,acct_033,usr_002,Opportunity 061,Closed Won,Closed,1.0,152200.0,2026-07-15,2026-07-01,2026-06-11,Follow up with buyer 61,
-opp_062,acct_035,usr_003,Opportunity 062,Closed Lost,Omitted,0.0,154400.0,2026-07-16,2026-06-28,2026-06-04,Follow up with buyer 62,
-opp_063,acct_037,usr_007,Opportunity 063,Prospecting,Pipeline,0.1,156600.0,2026-07-17,2026-06-25,2026-05-28,Follow up with buyer 63,
-opp_064,acct_039,usr_001,Opportunity 064,Discovery,Pipeline,0.25,158800.0,,2026-06-22,2026-05-21,Follow up with buyer 64,
-opp_065,acct_041,usr_002,Opportunity 065,Solution,Best Case,0.45,161000.0,2026-07-19,2026-06-19,2026-06-28,Follow up with buyer 65,
-opp_066,acct_043,usr_003,Opportunity 066,Proposal,Best Case,0.6,163200.0,2026-07-20,2026-06-16,2026-06-21,Follow up with buyer 66,
-opp_067,acct_045,usr_007,Opportunity 067,Negotiation,Best Case,0.75,0.0,2026-07-21,2026-06-13,2026-06-14,Follow up with buyer 67,
-opp_068,acct_002,usr_001,Opportunity 068,Procurement,Commit,0.85,167600.0,2026-07-22,2026-06-10,2026-06-07,Follow up with buyer 68,
-opp_069,acct_004,usr_002,Opportunity 069,Contract,Commit,0.95,169800.0,2026-07-23,2026-06-07,2026-05-31,,
-opp_070,acct_006,usr_003,Opportunity 070,Closed Won,Closed,1.0,172000.0,2026-07-24,2026-06-04,2026-05-24,Follow up with buyer 70,
-opp_071,acct_008,usr_007,Opportunity 071,Closed Lost,Omitted,0.0,174200.0,2026-07-25,2026-06-01,2026-07-01,Follow up with buyer 71,No budget
-opp_072,acct_010,usr_001,Opportunity 072,Prospecting,Pipeline,0.1,176400.0,2026-07-01,2026-05-29,2026-06-24,Follow up with buyer 72,
-opp_073,acct_012,usr_002,Opportunity 073,Discovery,Pipeline,0.25,178600.0,2026-07-27,2026-05-26,2026-06-17,Follow up with buyer 73,
-opp_074,acct_014,,Opportunity 074,Solution,Best Case,0.45,180800.0,2026-07-28,2026-05-23,2026-06-10,Follow up with buyer 74,
-opp_075,acct_016,usr_007,Opportunity 075,Proposal,Best Case,0.6,183000.0,2026-07-29,2026-05-20,2026-06-03,Follow up with buyer 75,
-opp_076,acct_018,usr_001,Opportunity 076,Negotiation,Best Case,0.75,185200.0,2026-07-30,2026-05-17,2026-05-27,Follow up with buyer 76,
-opp_077,acct_020,usr_002,Opportunity 077,Procurement,Commit,0.85,187400.0,2026-07-31,2026-05-14,2026-05-20,Follow up with buyer 77,
-opp_078,acct_022,usr_003,Opportunity 078,Contract,Commit,0.95,189600.0,2026-08-01,2026-05-11,2026-06-27,Follow up with buyer 78,
-opp_079,acct_024,usr_007,Opportunity 079,Closed Won,Closed,1.0,191800.0,2026-08-02,2026-05-08,2026-06-20,Follow up with buyer 79,
-opp_080,acct_026,usr_001,Opportunity 080,Closed Lost,Omitted,0.0,194000.0,2026-08-03,2026-05-05,2026-06-13,Follow up with buyer 80,No budget
+opportunity_id,lead_id,account_id,channel_id,campaign_id,created_date,close_date,stage,pipeline_value,expected_arr,sales_cycle_days
+opp_00001,lead_00001,acct_00001,ch_paid_search,paid_search_core,2026-01-08,2026-02-05,closed_won,60690.0,35700.0,35
+opp_00002,lead_00002,acct_00002,ch_paid_search,paid_search_core,2026-02-09,2026-03-10,closed_won,72618.0,38220.0,36
+opp_00003,lead_00003,acct_00003,ch_paid_search,paid_search_core,2026-03-10,2026-04-09,closed_won,85554.0,40740.0,37
+opp_00004,lead_00004,acct_00004,ch_paid_search,paid_search_core,2026-04-11,2026-05-12,closed_won,73542.0,43260.0,38
+opp_00005,lead_00005,acct_00005,ch_paid_search,paid_search_core,2026-05-12,2026-06-13,closed_won,86982.0,45780.0,39
+opp_00006,lead_00006,acct_00006,ch_paid_search,paid_search_core,2026-06-13,2026-07-16,closed_won,101430.0,48300.0,40
+opp_00007,lead_00007,acct_00007,ch_paid_search,paid_search_core,2026-01-14,2026-02-17,closed_won,60690.0,35700.0,41
+opp_00008,lead_00008,acct_00008,ch_paid_search,paid_search_core,2026-02-15,2026-03-22,closed_won,72618.0,38220.0,42
+opp_00009,lead_00009,acct_00009,ch_paid_search,paid_search_core,2026-03-16,2026-04-21,closed_won,85554.0,40740.0,43
+opp_00010,lead_00010,acct_00010,ch_paid_search,paid_search_core,2026-04-17,2026-05-24,closed_won,73542.0,43260.0,44
+opp_00011,lead_00011,acct_00011,ch_paid_search,paid_search_core,2026-05-18,2026-06-25,closed_won,86982.0,45780.0,45
+opp_00012,lead_00012,acct_00012,ch_paid_search,paid_search_core,2026-06-19,2026-07-28,closed_won,101430.0,48300.0,46
+opp_00013,lead_00013,acct_00013,ch_paid_search,paid_search_core,2026-01-20,2026-03-01,proposal,60690.0,35700.0,47
+opp_00014,lead_00014,acct_00014,ch_paid_search,paid_search_core,2026-02-21,2026-04-03,closed_lost,72618.0,38220.0,48
+opp_00015,lead_00015,acct_00015,ch_paid_search,paid_search_core,2026-03-22,2026-05-03,proposal,85554.0,40740.0,49
+opp_00016,lead_00016,acct_00016,ch_paid_search,paid_search_core,2026-04-23,2026-06-05,closed_lost,73542.0,43260.0,50
+opp_00017,lead_00017,acct_00017,ch_paid_search,paid_search_core,2026-05-24,2026-07-07,proposal,86982.0,45780.0,51
+opp_00018,lead_00018,acct_00018,ch_paid_search,paid_search_core,2026-06-25,2026-08-09,closed_lost,101430.0,48300.0,52
+opp_00019,lead_00019,acct_00019,ch_paid_search,paid_search_core,2026-01-26,2026-03-13,proposal,60690.0,35700.0,53
+opp_00020,lead_00020,acct_00020,ch_paid_search,paid_search_core,2026-02-27,2026-04-15,closed_lost,72618.0,38220.0,54
+opp_00021,lead_00021,acct_00021,ch_paid_search,paid_search_core,2026-03-28,2026-05-15,proposal,85554.0,40740.0,55
+opp_00022,lead_00022,acct_00022,ch_paid_search,paid_search_core,2026-04-29,2026-06-17,closed_lost,73542.0,43260.0,56
+opp_00023,lead_00023,acct_00023,ch_paid_search,paid_search_core,2026-05-30,2026-07-19,proposal,86982.0,45780.0,57
+opp_00024,lead_00024,acct_00024,ch_paid_search,paid_search_core,2026-07-01,2026-08-21,closed_lost,101430.0,48300.0,58
+opp_00025,lead_00025,acct_00025,ch_paid_search,paid_search_core,2026-02-01,2026-03-25,proposal,60690.0,35700.0,59
+opp_00026,lead_00026,acct_00026,ch_paid_search,paid_search_core,2026-02-08,2026-04-02,closed_lost,72618.0,38220.0,60
+opp_00027,lead_00027,acct_00027,ch_paid_search,paid_search_core,2026-03-09,2026-05-02,proposal,85554.0,40740.0,61
+opp_00028,lead_00028,acct_00028,ch_paid_search,paid_search_core,2026-04-10,2026-06-04,closed_lost,73542.0,43260.0,62
+opp_00029,lead_00029,acct_00029,ch_paid_search,paid_search_core,2026-05-11,2026-07-06,proposal,86982.0,45780.0,63
+opp_00030,lead_00030,acct_00030,ch_paid_search,paid_search_core,2026-06-12,2026-08-08,closed_lost,101430.0,48300.0,64
+opp_00031,lead_00031,acct_00031,ch_paid_search,paid_search_core,2026-01-13,2026-03-12,proposal,60690.0,35700.0,65
+opp_00032,lead_00032,acct_00032,ch_paid_search,paid_search_core,2026-02-14,2026-04-14,closed_lost,72618.0,38220.0,66
+opp_00033,lead_00033,acct_00033,ch_paid_search,paid_search_core,2026-03-15,2026-05-14,proposal,85554.0,40740.0,67
+opp_00034,lead_00034,acct_00034,ch_paid_search,paid_search_core,2026-04-16,2026-06-16,closed_lost,73542.0,43260.0,68
+opp_00035,lead_00035,acct_00035,ch_paid_search,paid_search_core,2026-05-17,2026-07-18,proposal,86982.0,45780.0,69
+opp_00036,lead_00036,acct_00036,ch_paid_search,paid_search_core,2026-06-18,2026-08-20,closed_lost,101430.0,48300.0,70
+opp_00037,lead_00037,acct_00037,ch_paid_search,paid_search_core,2026-01-19,2026-03-24,proposal,60690.0,35700.0,71
+opp_00038,lead_00038,acct_00038,ch_paid_search,paid_search_core,2026-02-20,2026-04-26,closed_lost,72618.0,38220.0,72
+opp_00039,lead_00039,acct_00039,ch_paid_search,paid_search_core,2026-03-21,2026-05-26,proposal,85554.0,40740.0,73
+opp_00040,lead_00040,acct_00040,ch_paid_search,paid_search_core,2026-04-22,2026-06-28,closed_lost,73542.0,43260.0,74
+opp_00041,lead_00041,acct_00041,ch_paid_search,paid_search_core,2026-05-23,2026-07-30,proposal,86982.0,45780.0,75
+opp_00042,lead_00042,acct_00042,ch_paid_search,paid_search_core,2026-06-24,2026-09-01,closed_lost,101430.0,48300.0,76
+opp_00043,lead_00043,acct_00043,ch_paid_search,paid_search_core,2026-01-25,2026-04-05,proposal,60690.0,35700.0,77
+opp_00044,lead_00044,acct_00044,ch_paid_search,paid_search_core,2026-02-26,2026-05-08,closed_lost,72618.0,38220.0,78
+opp_00045,lead_00045,acct_00045,ch_paid_search,paid_search_core,2026-03-27,2026-06-07,proposal,85554.0,40740.0,79
+opp_00046,lead_00046,acct_00046,ch_paid_search,paid_search_core,2026-04-28,2026-07-10,closed_lost,73542.0,43260.0,80
+opp_00047,lead_00047,acct_00047,ch_paid_search,paid_search_core,2026-05-29,2026-08-11,proposal,86982.0,45780.0,81
+opp_00048,lead_00048,acct_00048,ch_paid_search,paid_search_core,2026-06-30,2026-09-13,closed_lost,101430.0,48300.0,82
+opp_00049,lead_00049,acct_00049,ch_paid_search,paid_search_core,2026-01-31,2026-04-17,proposal,60690.0,35700.0,83
+opp_00050,lead_00050,acct_00050,ch_paid_search,paid_search_core,2026-03-04,2026-05-20,closed_lost,72618.0,38220.0,84
+opp_00051,lead_00051,acct_00051,ch_paid_search,paid_search_core,2026-03-08,2026-04-05,proposal,85554.0,40740.0,35
+opp_00052,lead_00052,acct_00052,ch_paid_search,paid_search_core,2026-04-09,2026-05-08,closed_lost,73542.0,43260.0,36
+opp_00053,lead_00053,acct_00053,ch_paid_search,paid_search_core,2026-05-10,2026-06-09,proposal,86982.0,45780.0,37
+opp_00054,lead_00054,acct_00054,ch_paid_search,paid_search_core,2026-06-11,2026-07-12,closed_lost,101430.0,48300.0,38
+opp_00055,lead_00055,acct_00055,ch_paid_search,paid_search_core,2026-01-12,2026-02-13,proposal,60690.0,35700.0,39
+opp_00056,lead_00056,acct_00056,ch_paid_search,paid_search_core,2026-02-13,2026-03-18,closed_lost,72618.0,38220.0,40
+opp_00057,lead_00057,acct_00057,ch_paid_search,paid_search_core,2026-03-14,2026-04-17,proposal,85554.0,40740.0,41
+opp_00058,lead_00058,acct_00058,ch_paid_search,paid_search_core,2026-04-15,2026-05-20,closed_lost,73542.0,43260.0,42
+opp_00059,lead_00059,acct_00059,ch_paid_search,paid_search_core,2026-05-16,2026-06-21,proposal,86982.0,45780.0,43
+opp_00060,lead_00060,acct_00060,ch_paid_search,paid_search_core,2026-06-17,2026-07-24,closed_lost,101430.0,48300.0,44
+opp_00061,lead_00061,acct_00061,ch_paid_search,paid_search_core,2026-01-18,2026-02-25,proposal,60690.0,35700.0,45
+opp_00062,lead_00406,acct_00406,ch_paid_search,paid_search_broad,2026-01-08,2026-02-05,closed_won,60690.0,35700.0,35
+opp_00063,lead_00407,acct_00407,ch_paid_search,paid_search_broad,2026-02-09,2026-03-10,closed_lost,72618.0,38220.0,36
+opp_00064,lead_00408,acct_00408,ch_paid_search,paid_search_broad,2026-03-10,2026-04-09,proposal,85554.0,40740.0,37
+opp_00065,lead_00409,acct_00409,ch_paid_search,paid_search_broad,2026-04-11,2026-05-12,closed_lost,73542.0,43260.0,38
+opp_00066,lead_00410,acct_00410,ch_paid_search,paid_search_broad,2026-05-12,2026-06-13,proposal,86982.0,45780.0,39
+opp_00067,lead_00411,acct_00411,ch_paid_search,paid_search_broad,2026-06-13,2026-07-16,closed_lost,101430.0,48300.0,40
+opp_00068,lead_00412,acct_00412,ch_paid_search,paid_search_broad,2026-01-14,2026-02-17,proposal,60690.0,35700.0,41
+opp_00069,lead_00413,acct_00413,ch_paid_search,paid_search_broad,2026-02-15,2026-03-22,closed_lost,72618.0,38220.0,42
+opp_00070,lead_00414,acct_00414,ch_paid_search,paid_search_broad,2026-03-16,2026-04-21,proposal,85554.0,40740.0,43
+opp_00071,lead_00415,acct_00415,ch_paid_search,paid_search_broad,2026-04-17,2026-05-24,closed_lost,73542.0,43260.0,44
+opp_00072,lead_00901,acct_00901,ch_organic,organic_seo_bottom,2026-01-08,2026-02-05,closed_won,56355.0,33150.0,35
+opp_00073,lead_00902,acct_00902,ch_organic,organic_seo_bottom,2026-02-09,2026-03-10,closed_won,67431.0,35490.0,36
+opp_00074,lead_00903,acct_00903,ch_organic,organic_seo_bottom,2026-03-10,2026-04-09,closed_won,79443.0,37830.0,37
+opp_00075,lead_00904,acct_00904,ch_organic,organic_seo_bottom,2026-04-11,2026-05-12,closed_won,68289.0,40170.0,38
+opp_00076,lead_00905,acct_00905,ch_organic,organic_seo_bottom,2026-05-12,2026-06-13,closed_won,80769.0,42510.0,39
+opp_00077,lead_00906,acct_00906,ch_organic,organic_seo_bottom,2026-06-13,2026-07-16,closed_won,94185.0,44850.0,40
+opp_00078,lead_00907,acct_00907,ch_organic,organic_seo_bottom,2026-01-14,2026-02-17,closed_won,56355.0,33150.0,41
+opp_00079,lead_00908,acct_00908,ch_organic,organic_seo_bottom,2026-02-15,2026-03-22,closed_won,67431.0,35490.0,42
+opp_00080,lead_00909,acct_00909,ch_organic,organic_seo_bottom,2026-03-16,2026-04-21,closed_won,79443.0,37830.0,43
+opp_00081,lead_00910,acct_00910,ch_organic,organic_seo_bottom,2026-04-17,2026-05-24,closed_won,68289.0,40170.0,44
+opp_00082,lead_00911,acct_00911,ch_organic,organic_seo_bottom,2026-05-18,2026-06-25,closed_won,80769.0,42510.0,45
+opp_00083,lead_00912,acct_00912,ch_organic,organic_seo_bottom,2026-06-19,2026-07-28,closed_won,94185.0,44850.0,46
+opp_00084,lead_00913,acct_00913,ch_organic,organic_seo_bottom,2026-01-20,2026-03-01,closed_won,56355.0,33150.0,47
+opp_00085,lead_00914,acct_00914,ch_organic,organic_seo_bottom,2026-02-21,2026-04-03,closed_won,67431.0,35490.0,48
+opp_00086,lead_00915,acct_00915,ch_organic,organic_seo_bottom,2026-03-22,2026-05-03,closed_won,79443.0,37830.0,49
+opp_00087,lead_00916,acct_00916,ch_organic,organic_seo_bottom,2026-04-23,2026-06-05,closed_won,68289.0,40170.0,50
+opp_00088,lead_00917,acct_00917,ch_organic,organic_seo_bottom,2026-05-24,2026-07-07,closed_won,80769.0,42510.0,51
+opp_00089,lead_00918,acct_00918,ch_organic,organic_seo_bottom,2026-06-25,2026-08-09,closed_won,94185.0,44850.0,52
+opp_00090,lead_00919,acct_00919,ch_organic,organic_seo_bottom,2026-01-26,2026-03-13,closed_won,56355.0,33150.0,53
+opp_00091,lead_00920,acct_00920,ch_organic,organic_seo_bottom,2026-02-27,2026-04-15,closed_won,67431.0,35490.0,54
+opp_00092,lead_00921,acct_00921,ch_organic,organic_seo_bottom,2026-03-28,2026-05-15,closed_won,79443.0,37830.0,55
+opp_00093,lead_00922,acct_00922,ch_organic,organic_seo_bottom,2026-04-29,2026-06-17,closed_lost,68289.0,40170.0,56
+opp_00094,lead_00923,acct_00923,ch_organic,organic_seo_bottom,2026-05-30,2026-07-19,proposal,80769.0,42510.0,57
+opp_00095,lead_00924,acct_00924,ch_organic,organic_seo_bottom,2026-07-01,2026-08-21,closed_lost,94185.0,44850.0,58
+opp_00096,lead_00925,acct_00925,ch_organic,organic_seo_bottom,2026-02-01,2026-03-25,proposal,56355.0,33150.0,59
+opp_00097,lead_00926,acct_00926,ch_organic,organic_seo_bottom,2026-02-08,2026-04-02,closed_lost,67431.0,35490.0,60
+opp_00098,lead_00927,acct_00927,ch_organic,organic_seo_bottom,2026-03-09,2026-05-02,proposal,79443.0,37830.0,61
+opp_00099,lead_00928,acct_00928,ch_organic,organic_seo_bottom,2026-04-10,2026-06-04,closed_lost,68289.0,40170.0,62
+opp_00100,lead_00929,acct_00929,ch_organic,organic_seo_bottom,2026-05-11,2026-07-06,proposal,80769.0,42510.0,63
+opp_00101,lead_00930,acct_00930,ch_organic,organic_seo_bottom,2026-06-12,2026-08-08,closed_lost,94185.0,44850.0,64
+opp_00102,lead_00931,acct_00931,ch_organic,organic_seo_bottom,2026-01-13,2026-03-12,proposal,56355.0,33150.0,65
+opp_00103,lead_00932,acct_00932,ch_organic,organic_seo_bottom,2026-02-14,2026-04-14,closed_lost,67431.0,35490.0,66
+opp_00104,lead_00933,acct_00933,ch_organic,organic_seo_bottom,2026-03-15,2026-05-14,proposal,79443.0,37830.0,67
+opp_00105,lead_00934,acct_00934,ch_organic,organic_seo_bottom,2026-04-16,2026-06-16,closed_lost,68289.0,40170.0,68
+opp_00106,lead_00935,acct_00935,ch_organic,organic_seo_bottom,2026-05-17,2026-07-18,proposal,80769.0,42510.0,69
+opp_00107,lead_00936,acct_00936,ch_organic,organic_seo_bottom,2026-06-18,2026-08-20,closed_lost,94185.0,44850.0,70
+opp_00108,lead_00937,acct_00937,ch_organic,organic_seo_bottom,2026-01-19,2026-03-24,proposal,56355.0,33150.0,71
+opp_00109,lead_00938,acct_00938,ch_organic,organic_seo_bottom,2026-02-20,2026-04-26,closed_lost,67431.0,35490.0,72
+opp_00110,lead_00939,acct_00939,ch_organic,organic_seo_bottom,2026-03-21,2026-05-26,proposal,79443.0,37830.0,73
+opp_00111,lead_00940,acct_00940,ch_organic,organic_seo_bottom,2026-04-22,2026-06-28,closed_lost,68289.0,40170.0,74
+opp_00112,lead_00941,acct_00941,ch_organic,organic_seo_bottom,2026-05-23,2026-07-30,proposal,80769.0,42510.0,75
+opp_00113,lead_00942,acct_00942,ch_organic,organic_seo_bottom,2026-06-24,2026-09-01,closed_lost,94185.0,44850.0,76
+opp_00114,lead_00943,acct_00943,ch_organic,organic_seo_bottom,2026-01-25,2026-04-05,proposal,56355.0,33150.0,77
+opp_00115,lead_00944,acct_00944,ch_organic,organic_seo_bottom,2026-02-26,2026-05-08,closed_lost,67431.0,35490.0,78
+opp_00116,lead_00945,acct_00945,ch_organic,organic_seo_bottom,2026-03-27,2026-06-07,proposal,79443.0,37830.0,79
+opp_00117,lead_00946,acct_00946,ch_organic,organic_seo_bottom,2026-04-28,2026-07-10,closed_lost,68289.0,40170.0,80
+opp_00118,lead_00947,acct_00947,ch_organic,organic_seo_bottom,2026-05-29,2026-08-11,proposal,80769.0,42510.0,81
+opp_00119,lead_00948,acct_00948,ch_organic,organic_seo_bottom,2026-06-30,2026-09-13,closed_lost,94185.0,44850.0,82
+opp_00120,lead_00949,acct_00949,ch_organic,organic_seo_bottom,2026-01-31,2026-04-17,proposal,56355.0,33150.0,83
+opp_00121,lead_00950,acct_00950,ch_organic,organic_seo_bottom,2026-03-04,2026-05-20,closed_lost,67431.0,35490.0,84
+opp_00122,lead_00951,acct_00951,ch_organic,organic_seo_bottom,2026-03-08,2026-04-05,proposal,79443.0,37830.0,35
+opp_00123,lead_00952,acct_00952,ch_organic,organic_seo_bottom,2026-04-09,2026-05-08,closed_lost,68289.0,40170.0,36
+opp_00124,lead_00953,acct_00953,ch_organic,organic_seo_bottom,2026-05-10,2026-06-09,proposal,80769.0,42510.0,37
+opp_00125,lead_00954,acct_00954,ch_organic,organic_seo_bottom,2026-06-11,2026-07-12,closed_lost,94185.0,44850.0,38
+opp_00126,lead_00955,acct_00955,ch_organic,organic_seo_bottom,2026-01-12,2026-02-13,proposal,56355.0,33150.0,39
+opp_00127,lead_00956,acct_00956,ch_organic,organic_seo_bottom,2026-02-13,2026-03-18,closed_lost,67431.0,35490.0,40
+opp_00128,lead_00957,acct_00957,ch_organic,organic_seo_bottom,2026-03-14,2026-04-17,proposal,79443.0,37830.0,41
+opp_00129,lead_00958,acct_00958,ch_organic,organic_seo_bottom,2026-04-15,2026-05-20,closed_lost,68289.0,40170.0,42
+opp_00130,lead_00959,acct_00959,ch_organic,organic_seo_bottom,2026-05-16,2026-06-21,proposal,80769.0,42510.0,43
+opp_00131,lead_00960,acct_00960,ch_organic,organic_seo_bottom,2026-06-17,2026-07-24,closed_lost,94185.0,44850.0,44
+opp_00132,lead_00961,acct_00961,ch_organic,organic_seo_bottom,2026-01-18,2026-02-25,proposal,56355.0,33150.0,45
+opp_00133,lead_00962,acct_00962,ch_organic,organic_seo_bottom,2026-02-19,2026-03-30,closed_lost,67431.0,35490.0,46
+opp_00134,lead_00963,acct_00963,ch_organic,organic_seo_bottom,2026-03-20,2026-04-29,proposal,79443.0,37830.0,47
+opp_00135,lead_00964,acct_00964,ch_organic,organic_seo_bottom,2026-04-21,2026-06-01,closed_lost,68289.0,40170.0,48
+opp_00136,lead_00965,acct_00965,ch_organic,organic_seo_bottom,2026-05-22,2026-07-03,proposal,80769.0,42510.0,49
+opp_00137,lead_01066,acct_01066,ch_organic,organic_content_hub,2026-01-08,2026-02-05,closed_won,56355.0,33150.0,35
+opp_00138,lead_01067,acct_01067,ch_organic,organic_content_hub,2026-02-09,2026-03-10,closed_won,67431.0,35490.0,36
+opp_00139,lead_01068,acct_01068,ch_organic,organic_content_hub,2026-03-10,2026-04-09,closed_won,79443.0,37830.0,37
+opp_00140,lead_01069,acct_01069,ch_organic,organic_content_hub,2026-04-11,2026-05-12,closed_won,68289.0,40170.0,38
+opp_00141,lead_01070,acct_01070,ch_organic,organic_content_hub,2026-05-12,2026-06-13,closed_won,80769.0,42510.0,39
+opp_00142,lead_01071,acct_01071,ch_organic,organic_content_hub,2026-06-13,2026-07-16,closed_lost,94185.0,44850.0,40
+opp_00143,lead_01072,acct_01072,ch_organic,organic_content_hub,2026-01-14,2026-02-17,proposal,56355.0,33150.0,41
+opp_00144,lead_01073,acct_01073,ch_organic,organic_content_hub,2026-02-15,2026-03-22,closed_lost,67431.0,35490.0,42
+opp_00145,lead_01074,acct_01074,ch_organic,organic_content_hub,2026-03-16,2026-04-21,proposal,79443.0,37830.0,43
+opp_00146,lead_01075,acct_01075,ch_organic,organic_content_hub,2026-04-17,2026-05-24,closed_lost,68289.0,40170.0,44
+opp_00147,lead_01076,acct_01076,ch_organic,organic_content_hub,2026-05-18,2026-06-25,proposal,80769.0,42510.0,45
+opp_00148,lead_01077,acct_01077,ch_organic,organic_content_hub,2026-06-19,2026-07-28,closed_lost,94185.0,44850.0,46
+opp_00149,lead_01078,acct_01078,ch_organic,organic_content_hub,2026-01-20,2026-03-01,proposal,56355.0,33150.0,47
+opp_00150,lead_01079,acct_01079,ch_organic,organic_content_hub,2026-02-21,2026-04-03,closed_lost,67431.0,35490.0,48
+opp_00151,lead_01080,acct_01080,ch_organic,organic_content_hub,2026-03-22,2026-05-03,proposal,79443.0,37830.0,49
+opp_00152,lead_01081,acct_01081,ch_organic,organic_content_hub,2026-04-23,2026-06-05,closed_lost,68289.0,40170.0,50
+opp_00153,lead_01082,acct_01082,ch_organic,organic_content_hub,2026-05-24,2026-07-07,proposal,80769.0,42510.0,51
+opp_00154,lead_01083,acct_01083,ch_organic,organic_content_hub,2026-06-25,2026-08-09,closed_lost,94185.0,44850.0,52
+opp_00155,lead_01084,acct_01084,ch_organic,organic_content_hub,2026-01-26,2026-03-13,proposal,56355.0,33150.0,53
+opp_00156,lead_01085,acct_01085,ch_organic,organic_content_hub,2026-02-27,2026-04-15,closed_lost,67431.0,35490.0,54
+opp_00157,lead_01086,acct_01086,ch_organic,organic_content_hub,2026-03-28,2026-05-15,proposal,79443.0,37830.0,55
+opp_00158,lead_01087,acct_01087,ch_organic,organic_content_hub,2026-04-29,2026-06-17,closed_lost,68289.0,40170.0,56
+opp_00159,lead_01201,acct_01201,ch_referral,referral_customer,2026-01-08,2026-02-05,closed_won,69360.0,40800.0,35
+opp_00160,lead_01202,acct_01202,ch_referral,referral_customer,2026-02-09,2026-03-10,closed_won,82992.0,43680.0,36
+opp_00161,lead_01203,acct_01203,ch_referral,referral_customer,2026-03-10,2026-04-09,closed_won,97776.0,46560.0,37
+opp_00162,lead_01204,acct_01204,ch_referral,referral_customer,2026-04-11,2026-05-12,closed_won,84048.0,49440.0,38
+opp_00163,lead_01205,acct_01205,ch_referral,referral_customer,2026-05-12,2026-06-13,closed_won,99408.0,52320.0,39
+opp_00164,lead_01206,acct_01206,ch_referral,referral_customer,2026-06-13,2026-07-16,closed_won,115920.0,55200.0,40
+opp_00165,lead_01207,acct_01207,ch_referral,referral_customer,2026-01-14,2026-02-17,closed_won,69360.0,40800.0,41
+opp_00166,lead_01208,acct_01208,ch_referral,referral_customer,2026-02-15,2026-03-22,closed_won,82992.0,43680.0,42
+opp_00167,lead_01209,acct_01209,ch_referral,referral_customer,2026-03-16,2026-04-21,closed_won,97776.0,46560.0,43
+opp_00168,lead_01210,acct_01210,ch_referral,referral_customer,2026-04-17,2026-05-24,closed_won,84048.0,49440.0,44
+opp_00169,lead_01211,acct_01211,ch_referral,referral_customer,2026-05-18,2026-06-25,closed_won,99408.0,52320.0,45
+opp_00170,lead_01212,acct_01212,ch_referral,referral_customer,2026-06-19,2026-07-28,closed_won,115920.0,55200.0,46
+opp_00171,lead_01213,acct_01213,ch_referral,referral_customer,2026-01-20,2026-03-01,closed_won,69360.0,40800.0,47
+opp_00172,lead_01214,acct_01214,ch_referral,referral_customer,2026-02-21,2026-04-03,closed_won,82992.0,43680.0,48
+opp_00173,lead_01215,acct_01215,ch_referral,referral_customer,2026-03-22,2026-05-03,closed_won,97776.0,46560.0,49
+opp_00174,lead_01216,acct_01216,ch_referral,referral_customer,2026-04-23,2026-06-05,closed_won,84048.0,49440.0,50
+opp_00175,lead_01217,acct_01217,ch_referral,referral_customer,2026-05-24,2026-07-07,closed_won,99408.0,52320.0,51
+opp_00176,lead_01218,acct_01218,ch_referral,referral_customer,2026-06-25,2026-08-09,closed_won,115920.0,55200.0,52
+opp_00177,lead_01219,acct_01219,ch_referral,referral_customer,2026-01-26,2026-03-13,closed_won,69360.0,40800.0,53
+opp_00178,lead_01220,acct_01220,ch_referral,referral_customer,2026-02-27,2026-04-15,closed_won,82992.0,43680.0,54
+opp_00179,lead_01221,acct_01221,ch_referral,referral_customer,2026-03-28,2026-05-15,closed_won,97776.0,46560.0,55
+opp_00180,lead_01222,acct_01222,ch_referral,referral_customer,2026-04-29,2026-06-17,closed_won,84048.0,49440.0,56
+opp_00181,lead_01223,acct_01223,ch_referral,referral_customer,2026-05-30,2026-07-19,closed_won,99408.0,52320.0,57
+opp_00182,lead_01224,acct_01224,ch_referral,referral_customer,2026-07-01,2026-08-21,closed_won,115920.0,55200.0,58
+opp_00183,lead_01225,acct_01225,ch_referral,referral_customer,2026-02-01,2026-03-25,closed_won,69360.0,40800.0,59
+opp_00184,lead_01226,acct_01226,ch_referral,referral_customer,2026-02-08,2026-04-02,closed_won,82992.0,43680.0,60
+opp_00185,lead_01227,acct_01227,ch_referral,referral_customer,2026-03-09,2026-05-02,closed_won,97776.0,46560.0,61
+opp_00186,lead_01228,acct_01228,ch_referral,referral_customer,2026-04-10,2026-06-04,closed_won,84048.0,49440.0,62
+opp_00187,lead_01229,acct_01229,ch_referral,referral_customer,2026-05-11,2026-07-06,closed_won,99408.0,52320.0,63
+opp_00188,lead_01230,acct_01230,ch_referral,referral_customer,2026-06-12,2026-08-08,closed_won,115920.0,55200.0,64
+opp_00189,lead_01231,acct_01231,ch_referral,referral_customer,2026-01-13,2026-03-12,closed_won,69360.0,40800.0,65
+opp_00190,lead_01232,acct_01232,ch_referral,referral_customer,2026-02-14,2026-04-14,closed_won,82992.0,43680.0,66
+opp_00191,lead_01233,acct_01233,ch_referral,referral_customer,2026-03-15,2026-05-14,closed_won,97776.0,46560.0,67
+opp_00192,lead_01234,acct_01234,ch_referral,referral_customer,2026-04-16,2026-06-16,closed_won,84048.0,49440.0,68
+opp_00193,lead_01235,acct_01235,ch_referral,referral_customer,2026-05-17,2026-07-18,closed_won,99408.0,52320.0,69
+opp_00194,lead_01236,acct_01236,ch_referral,referral_customer,2026-06-18,2026-08-20,closed_lost,115920.0,55200.0,70
+opp_00195,lead_01237,acct_01237,ch_referral,referral_customer,2026-01-19,2026-03-24,proposal,69360.0,40800.0,71
+opp_00196,lead_01238,acct_01238,ch_referral,referral_customer,2026-02-20,2026-04-26,closed_lost,82992.0,43680.0,72
+opp_00197,lead_01239,acct_01239,ch_referral,referral_customer,2026-03-21,2026-05-26,proposal,97776.0,46560.0,73
+opp_00198,lead_01240,acct_01240,ch_referral,referral_customer,2026-04-22,2026-06-28,closed_lost,84048.0,49440.0,74
+opp_00199,lead_01241,acct_01241,ch_referral,referral_customer,2026-05-23,2026-07-30,proposal,99408.0,52320.0,75
+opp_00200,lead_01242,acct_01242,ch_referral,referral_customer,2026-06-24,2026-09-01,closed_lost,115920.0,55200.0,76
+opp_00201,lead_01243,acct_01243,ch_referral,referral_customer,2026-01-25,2026-04-05,proposal,69360.0,40800.0,77
+opp_00202,lead_01244,acct_01244,ch_referral,referral_customer,2026-02-26,2026-05-08,closed_lost,82992.0,43680.0,78
+opp_00203,lead_01245,acct_01245,ch_referral,referral_customer,2026-03-27,2026-06-07,proposal,97776.0,46560.0,79
+opp_00204,lead_01246,acct_01246,ch_referral,referral_customer,2026-04-28,2026-07-10,closed_lost,84048.0,49440.0,80
+opp_00205,lead_01247,acct_01247,ch_referral,referral_customer,2026-05-29,2026-08-11,proposal,99408.0,52320.0,81
+opp_00206,lead_01248,acct_01248,ch_referral,referral_customer,2026-06-30,2026-09-13,closed_lost,115920.0,55200.0,82
+opp_00207,lead_01249,acct_01249,ch_referral,referral_customer,2026-01-31,2026-04-17,proposal,69360.0,40800.0,83
+opp_00208,lead_01250,acct_01250,ch_referral,referral_customer,2026-03-04,2026-05-20,closed_lost,82992.0,43680.0,84
+opp_00209,lead_01251,acct_01251,ch_referral,referral_customer,2026-03-08,2026-04-05,proposal,97776.0,46560.0,35
+opp_00210,lead_01252,acct_01252,ch_referral,referral_customer,2026-04-09,2026-05-08,closed_lost,84048.0,49440.0,36
+opp_00211,lead_01253,acct_01253,ch_referral,referral_customer,2026-05-10,2026-06-09,proposal,99408.0,52320.0,37
+opp_00212,lead_01254,acct_01254,ch_referral,referral_customer,2026-06-11,2026-07-12,closed_lost,115920.0,55200.0,38
+opp_00213,lead_01255,acct_01255,ch_referral,referral_customer,2026-01-12,2026-02-13,proposal,69360.0,40800.0,39
+opp_00214,lead_01256,acct_01256,ch_referral,referral_customer,2026-02-13,2026-03-18,closed_lost,82992.0,43680.0,40
+opp_00215,lead_01257,acct_01257,ch_referral,referral_customer,2026-03-14,2026-04-17,proposal,97776.0,46560.0,41
+opp_00216,lead_01258,acct_01258,ch_referral,referral_customer,2026-04-15,2026-05-20,closed_lost,84048.0,49440.0,42
+opp_00217,lead_01259,acct_01259,ch_referral,referral_customer,2026-05-16,2026-06-21,proposal,99408.0,52320.0,43
+opp_00218,lead_01260,acct_01260,ch_referral,referral_customer,2026-06-17,2026-07-24,closed_lost,115920.0,55200.0,44
+opp_00219,lead_01261,acct_01261,ch_referral,referral_customer,2026-01-18,2026-02-25,proposal,69360.0,40800.0,45
+opp_00220,lead_01262,acct_01262,ch_referral,referral_customer,2026-02-19,2026-03-30,closed_lost,82992.0,43680.0,46
+opp_00221,lead_01263,acct_01263,ch_referral,referral_customer,2026-03-20,2026-04-29,proposal,97776.0,46560.0,47
+opp_00222,lead_01264,acct_01264,ch_referral,referral_customer,2026-04-21,2026-06-01,closed_lost,84048.0,49440.0,48
+opp_00223,lead_01265,acct_01265,ch_referral,referral_customer,2026-05-22,2026-07-03,proposal,99408.0,52320.0,49
+opp_00224,lead_01266,acct_01266,ch_referral,referral_customer,2026-06-23,2026-08-05,closed_lost,115920.0,55200.0,50
+opp_00225,lead_01267,acct_01267,ch_referral,referral_customer,2026-01-24,2026-03-09,proposal,69360.0,40800.0,51
+opp_00226,lead_01292,acct_01292,ch_referral,referral_advisor,2026-01-08,2026-02-05,closed_won,69360.0,40800.0,35
+opp_00227,lead_01293,acct_01293,ch_referral,referral_advisor,2026-02-09,2026-03-10,closed_won,82992.0,43680.0,36
+opp_00228,lead_01294,acct_01294,ch_referral,referral_advisor,2026-03-10,2026-04-09,closed_won,97776.0,46560.0,37
+opp_00229,lead_01295,acct_01295,ch_referral,referral_advisor,2026-04-11,2026-05-12,closed_won,84048.0,49440.0,38
+opp_00230,lead_01296,acct_01296,ch_referral,referral_advisor,2026-05-12,2026-06-13,closed_won,99408.0,52320.0,39
+opp_00231,lead_01297,acct_01297,ch_referral,referral_advisor,2026-06-13,2026-07-16,closed_won,115920.0,55200.0,40
+opp_00232,lead_01298,acct_01298,ch_referral,referral_advisor,2026-01-14,2026-02-17,closed_won,69360.0,40800.0,41
+opp_00233,lead_01299,acct_01299,ch_referral,referral_advisor,2026-02-15,2026-03-22,closed_won,82992.0,43680.0,42
+opp_00234,lead_01300,acct_01300,ch_referral,referral_advisor,2026-03-16,2026-04-21,proposal,97776.0,46560.0,43
+opp_00235,lead_01301,acct_01301,ch_referral,referral_advisor,2026-04-17,2026-05-24,closed_lost,84048.0,49440.0,44
+opp_00236,lead_01302,acct_01302,ch_referral,referral_advisor,2026-05-18,2026-06-25,proposal,99408.0,52320.0,45
+opp_00237,lead_01303,acct_01303,ch_referral,referral_advisor,2026-06-19,2026-07-28,closed_lost,115920.0,55200.0,46
+opp_00238,lead_01304,acct_01304,ch_referral,referral_advisor,2026-01-20,2026-03-01,proposal,69360.0,40800.0,47
+opp_00239,lead_01305,acct_01305,ch_referral,referral_advisor,2026-02-21,2026-04-03,closed_lost,82992.0,43680.0,48
+opp_00240,lead_01306,acct_01306,ch_referral,referral_advisor,2026-03-22,2026-05-03,proposal,97776.0,46560.0,49
+opp_00241,lead_01307,acct_01307,ch_referral,referral_advisor,2026-04-23,2026-06-05,closed_lost,84048.0,49440.0,50
+opp_00242,lead_01308,acct_01308,ch_referral,referral_advisor,2026-05-24,2026-07-07,proposal,99408.0,52320.0,51
+opp_00243,lead_01309,acct_01309,ch_referral,referral_advisor,2026-06-25,2026-08-09,closed_lost,115920.0,55200.0,52
+opp_00244,lead_01310,acct_01310,ch_referral,referral_advisor,2026-01-26,2026-03-13,proposal,69360.0,40800.0,53
+opp_00245,lead_01311,acct_01311,ch_referral,referral_advisor,2026-02-27,2026-04-15,closed_lost,82992.0,43680.0,54
+opp_00246,lead_01331,acct_01331,ch_paid_social,paid_social_lead_ads,2026-01-08,2026-02-05,closed_won,36125.0,21250.0,35
+opp_00247,lead_01968,acct_01968,ch_paid_social,paid_social_retargeting,2026-01-08,2026-02-05,closed_won,36125.0,21250.0,35
+opp_00248,lead_01969,acct_01969,ch_paid_social,paid_social_retargeting,2026-02-09,2026-03-10,closed_lost,43225.0,22750.0,36
+opp_00249,lead_01970,acct_01970,ch_paid_social,paid_social_retargeting,2026-03-10,2026-04-09,proposal,50925.0,24250.0,37
+opp_00250,lead_01971,acct_01971,ch_paid_social,paid_social_retargeting,2026-04-11,2026-05-12,closed_lost,43775.0,25750.0,38
+opp_00251,lead_01972,acct_01972,ch_paid_social,paid_social_retargeting,2026-05-12,2026-06-13,proposal,51775.0,27250.0,39
+opp_00252,lead_02311,acct_02311,ch_events,events_flagship,2026-01-08,2026-02-05,closed_won,128605.0,75650.0,35
+opp_00253,lead_02312,acct_02312,ch_events,events_flagship,2026-02-09,2026-03-10,closed_won,153881.0,80990.0,36
+opp_00254,lead_02313,acct_02313,ch_events,events_flagship,2026-03-10,2026-04-09,closed_won,181293.0,86330.0,37
+opp_00255,lead_02314,acct_02314,ch_events,events_flagship,2026-04-11,2026-05-12,closed_won,155839.0,91670.0,38
+opp_00256,lead_02315,acct_02315,ch_events,events_flagship,2026-05-12,2026-06-13,closed_won,184319.0,97010.0,39
+opp_00257,lead_02316,acct_02316,ch_events,events_flagship,2026-06-13,2026-07-16,closed_won,214935.0,102350.0,40
+opp_00258,lead_02317,acct_02317,ch_events,events_flagship,2026-01-14,2026-02-17,proposal,128605.0,75650.0,41
+opp_00259,lead_02318,acct_02318,ch_events,events_flagship,2026-02-15,2026-03-22,closed_lost,153881.0,80990.0,42
+opp_00260,lead_02319,acct_02319,ch_events,events_flagship,2026-03-16,2026-04-21,proposal,181293.0,86330.0,43
+opp_00261,lead_02320,acct_02320,ch_events,events_flagship,2026-04-17,2026-05-24,closed_lost,155839.0,91670.0,44
+opp_00262,lead_02321,acct_02321,ch_events,events_flagship,2026-05-18,2026-06-25,proposal,184319.0,97010.0,45
+opp_00263,lead_02322,acct_02322,ch_events,events_flagship,2026-06-19,2026-07-28,closed_lost,214935.0,102350.0,46
+opp_00264,lead_02323,acct_02323,ch_events,events_flagship,2026-01-20,2026-03-01,proposal,128605.0,75650.0,47
+opp_00265,lead_02324,acct_02324,ch_events,events_flagship,2026-02-21,2026-04-03,closed_lost,153881.0,80990.0,48
+opp_00266,lead_02325,acct_02325,ch_events,events_flagship,2026-03-22,2026-05-03,proposal,181293.0,86330.0,49
+opp_00267,lead_02326,acct_02326,ch_events,events_flagship,2026-04-23,2026-06-05,closed_lost,155839.0,91670.0,50
+opp_00268,lead_02327,acct_02327,ch_events,events_flagship,2026-05-24,2026-07-07,proposal,184319.0,97010.0,51
+opp_00269,lead_02328,acct_02328,ch_events,events_flagship,2026-06-25,2026-08-09,closed_lost,214935.0,102350.0,52
+opp_00270,lead_02329,acct_02329,ch_events,events_flagship,2026-01-26,2026-03-13,proposal,128605.0,75650.0,53
+opp_00271,lead_02330,acct_02330,ch_events,events_flagship,2026-02-27,2026-04-15,closed_lost,153881.0,80990.0,54
+opp_00272,lead_02331,acct_02331,ch_events,events_flagship,2026-03-28,2026-05-15,proposal,181293.0,86330.0,55
+opp_00273,lead_02332,acct_02332,ch_events,events_flagship,2026-04-29,2026-06-17,closed_lost,155839.0,91670.0,56
+opp_00274,lead_02333,acct_02333,ch_events,events_flagship,2026-05-30,2026-07-19,proposal,184319.0,97010.0,57
+opp_00275,lead_02334,acct_02334,ch_events,events_flagship,2026-07-01,2026-08-21,closed_lost,214935.0,102350.0,58
+opp_00276,lead_02335,acct_02335,ch_events,events_flagship,2026-02-01,2026-03-25,proposal,128605.0,75650.0,59
+opp_00277,lead_02336,acct_02336,ch_events,events_flagship,2026-02-08,2026-04-02,closed_lost,153881.0,80990.0,60
+opp_00278,lead_02337,acct_02337,ch_events,events_flagship,2026-03-09,2026-05-02,proposal,181293.0,86330.0,61
+opp_00279,lead_02338,acct_02338,ch_events,events_flagship,2026-04-10,2026-06-04,closed_lost,155839.0,91670.0,62
+opp_00280,lead_02339,acct_02339,ch_events,events_flagship,2026-05-11,2026-07-06,proposal,184319.0,97010.0,63
+opp_00281,lead_02340,acct_02340,ch_events,events_flagship,2026-06-12,2026-08-08,closed_lost,214935.0,102350.0,64
+opp_00282,lead_02341,acct_02341,ch_events,events_flagship,2026-01-13,2026-03-12,proposal,128605.0,75650.0,65
+opp_00283,lead_02342,acct_02342,ch_events,events_flagship,2026-02-14,2026-04-14,closed_lost,153881.0,80990.0,66
+opp_00284,lead_02343,acct_02343,ch_events,events_flagship,2026-03-15,2026-05-14,proposal,181293.0,86330.0,67
+opp_00285,lead_02344,acct_02344,ch_events,events_flagship,2026-04-16,2026-06-16,closed_lost,155839.0,91670.0,68
+opp_00286,lead_02345,acct_02345,ch_events,events_flagship,2026-05-17,2026-07-18,proposal,184319.0,97010.0,69
+opp_00287,lead_02346,acct_02346,ch_events,events_flagship,2026-06-18,2026-08-20,closed_lost,214935.0,102350.0,70
+opp_00288,lead_02347,acct_02347,ch_events,events_flagship,2026-01-19,2026-03-24,proposal,128605.0,75650.0,71
+opp_00289,lead_02348,acct_02348,ch_events,events_flagship,2026-02-20,2026-04-26,closed_lost,153881.0,80990.0,72
+opp_00290,lead_02349,acct_02349,ch_events,events_flagship,2026-03-21,2026-05-26,proposal,181293.0,86330.0,73
+opp_00291,lead_02350,acct_02350,ch_events,events_flagship,2026-04-22,2026-06-28,closed_lost,155839.0,91670.0,74
+opp_00292,lead_02351,acct_02351,ch_events,events_flagship,2026-05-23,2026-07-30,proposal,184319.0,97010.0,75
+opp_00293,lead_02352,acct_02352,ch_events,events_flagship,2026-06-24,2026-09-01,closed_lost,214935.0,102350.0,76
+opp_00294,lead_02353,acct_02353,ch_events,events_flagship,2026-01-25,2026-04-05,proposal,128605.0,75650.0,77
+opp_00295,lead_02354,acct_02354,ch_events,events_flagship,2026-02-26,2026-05-08,closed_lost,153881.0,80990.0,78
+opp_00296,lead_02355,acct_02355,ch_events,events_flagship,2026-03-27,2026-06-07,proposal,181293.0,86330.0,79
+opp_00297,lead_02356,acct_02356,ch_events,events_flagship,2026-04-28,2026-07-10,closed_lost,155839.0,91670.0,80
+opp_00298,lead_02357,acct_02357,ch_events,events_flagship,2026-05-29,2026-08-11,proposal,184319.0,97010.0,81
+opp_00299,lead_02358,acct_02358,ch_events,events_flagship,2026-06-30,2026-09-13,closed_lost,214935.0,102350.0,82
+opp_00300,lead_02359,acct_02359,ch_events,events_flagship,2026-01-31,2026-04-17,proposal,128605.0,75650.0,83
+opp_00301,lead_02360,acct_02360,ch_events,events_flagship,2026-03-04,2026-05-20,closed_lost,153881.0,80990.0,84
+opp_00302,lead_02361,acct_02361,ch_events,events_flagship,2026-03-08,2026-04-05,proposal,181293.0,86330.0,35
+opp_00303,lead_02362,acct_02362,ch_events,events_flagship,2026-04-09,2026-05-08,closed_lost,155839.0,91670.0,36
+opp_00304,lead_02363,acct_02363,ch_events,events_flagship,2026-05-10,2026-06-09,proposal,184319.0,97010.0,37
+opp_00305,lead_02364,acct_02364,ch_events,events_flagship,2026-06-11,2026-07-12,closed_lost,214935.0,102350.0,38
+opp_00306,lead_02365,acct_02365,ch_events,events_flagship,2026-01-12,2026-02-13,proposal,128605.0,75650.0,39
+opp_00307,lead_02366,acct_02366,ch_events,events_flagship,2026-02-13,2026-03-18,closed_lost,153881.0,80990.0,40
+opp_00308,lead_02367,acct_02367,ch_events,events_flagship,2026-03-14,2026-04-17,proposal,181293.0,86330.0,41
+opp_00309,lead_02368,acct_02368,ch_events,events_flagship,2026-04-15,2026-05-20,closed_lost,155839.0,91670.0,42
+opp_00310,lead_02369,acct_02369,ch_events,events_flagship,2026-05-16,2026-06-21,proposal,184319.0,97010.0,43
+opp_00311,lead_02370,acct_02370,ch_events,events_flagship,2026-06-17,2026-07-24,closed_lost,214935.0,102350.0,44
+opp_00312,lead_02371,acct_02371,ch_events,events_flagship,2026-01-18,2026-02-25,proposal,128605.0,75650.0,45
+opp_00313,lead_02372,acct_02372,ch_events,events_flagship,2026-02-19,2026-03-30,closed_lost,153881.0,80990.0,46
+opp_00314,lead_02373,acct_02373,ch_events,events_flagship,2026-03-20,2026-04-29,proposal,181293.0,86330.0,47
+opp_00315,lead_02468,acct_02468,ch_events,events_field,2026-01-08,2026-02-05,closed_won,128605.0,75650.0,35
+opp_00316,lead_02469,acct_02469,ch_events,events_field,2026-02-09,2026-03-10,closed_won,153881.0,80990.0,36
+opp_00317,lead_02470,acct_02470,ch_events,events_field,2026-03-10,2026-04-09,closed_won,181293.0,86330.0,37
+opp_00318,lead_02471,acct_02471,ch_events,events_field,2026-04-11,2026-05-12,closed_won,155839.0,91670.0,38
+opp_00319,lead_02472,acct_02472,ch_events,events_field,2026-05-12,2026-06-13,closed_won,184319.0,97010.0,39
+opp_00320,lead_02473,acct_02473,ch_events,events_field,2026-06-13,2026-07-16,closed_lost,214935.0,102350.0,40
+opp_00321,lead_02474,acct_02474,ch_events,events_field,2026-01-14,2026-02-17,proposal,128605.0,75650.0,41
+opp_00322,lead_02475,acct_02475,ch_events,events_field,2026-02-15,2026-03-22,closed_lost,153881.0,80990.0,42
+opp_00323,lead_02476,acct_02476,ch_events,events_field,2026-03-16,2026-04-21,proposal,181293.0,86330.0,43
+opp_00324,lead_02477,acct_02477,ch_events,events_field,2026-04-17,2026-05-24,closed_lost,155839.0,91670.0,44
+opp_00325,lead_02478,acct_02478,ch_events,events_field,2026-05-18,2026-06-25,proposal,184319.0,97010.0,45
+opp_00326,lead_02479,acct_02479,ch_events,events_field,2026-06-19,2026-07-28,closed_lost,214935.0,102350.0,46
+opp_00327,lead_02480,acct_02480,ch_events,events_field,2026-01-20,2026-03-01,proposal,128605.0,75650.0,47
+opp_00328,lead_02481,acct_02481,ch_events,events_field,2026-02-21,2026-04-03,closed_lost,153881.0,80990.0,48
+opp_00329,lead_02482,acct_02482,ch_events,events_field,2026-03-22,2026-05-03,proposal,181293.0,86330.0,49
+opp_00330,lead_02483,acct_02483,ch_events,events_field,2026-04-23,2026-06-05,closed_lost,155839.0,91670.0,50
+opp_00331,lead_02484,acct_02484,ch_events,events_field,2026-05-24,2026-07-07,proposal,184319.0,97010.0,51
+opp_00332,lead_02485,acct_02485,ch_events,events_field,2026-06-25,2026-08-09,closed_lost,214935.0,102350.0,52
+opp_00333,lead_02486,acct_02486,ch_events,events_field,2026-01-26,2026-03-13,proposal,128605.0,75650.0,53
+opp_00334,lead_02487,acct_02487,ch_events,events_field,2026-02-27,2026-04-15,closed_lost,153881.0,80990.0,54
+opp_00335,lead_02488,acct_02488,ch_events,events_field,2026-03-28,2026-05-15,proposal,181293.0,86330.0,55
+opp_00336,lead_02489,acct_02489,ch_events,events_field,2026-04-29,2026-06-17,closed_lost,155839.0,91670.0,56
+opp_00337,lead_02490,acct_02490,ch_events,events_field,2026-05-30,2026-07-19,proposal,184319.0,97010.0,57
+opp_00338,lead_02491,acct_02491,ch_events,events_field,2026-07-01,2026-08-21,closed_lost,214935.0,102350.0,58
+opp_00339,lead_02492,acct_02492,ch_events,events_field,2026-02-01,2026-03-25,proposal,128605.0,75650.0,59
+opp_00340,lead_02493,acct_02493,ch_events,events_field,2026-02-08,2026-04-02,closed_lost,153881.0,80990.0,60
+opp_00341,lead_02494,acct_02494,ch_events,events_field,2026-03-09,2026-05-02,proposal,181293.0,86330.0,61
+opp_00342,lead_02520,acct_02520,ch_partner,partner_cloud,2026-01-08,2026-02-05,closed_won,75140.0,44200.0,35
+opp_00343,lead_02521,acct_02521,ch_partner,partner_cloud,2026-02-09,2026-03-10,closed_won,89908.0,47320.0,36
+opp_00344,lead_02522,acct_02522,ch_partner,partner_cloud,2026-03-10,2026-04-09,closed_won,105924.0,50440.0,37
+opp_00345,lead_02523,acct_02523,ch_partner,partner_cloud,2026-04-11,2026-05-12,closed_won,91052.0,53560.0,38
+opp_00346,lead_02524,acct_02524,ch_partner,partner_cloud,2026-05-12,2026-06-13,closed_won,107692.0,56680.0,39
+opp_00347,lead_02525,acct_02525,ch_partner,partner_cloud,2026-06-13,2026-07-16,closed_won,125580.0,59800.0,40
+opp_00348,lead_02526,acct_02526,ch_partner,partner_cloud,2026-01-14,2026-02-17,closed_won,75140.0,44200.0,41
+opp_00349,lead_02527,acct_02527,ch_partner,partner_cloud,2026-02-15,2026-03-22,closed_won,89908.0,47320.0,42
+opp_00350,lead_02528,acct_02528,ch_partner,partner_cloud,2026-03-16,2026-04-21,closed_won,105924.0,50440.0,43
+opp_00351,lead_02529,acct_02529,ch_partner,partner_cloud,2026-04-17,2026-05-24,closed_won,91052.0,53560.0,44
+opp_00352,lead_02530,acct_02530,ch_partner,partner_cloud,2026-05-18,2026-06-25,closed_won,107692.0,56680.0,45
+opp_00353,lead_02531,acct_02531,ch_partner,partner_cloud,2026-06-19,2026-07-28,closed_won,125580.0,59800.0,46
+opp_00354,lead_02532,acct_02532,ch_partner,partner_cloud,2026-01-20,2026-03-01,closed_won,75140.0,44200.0,47
+opp_00355,lead_02533,acct_02533,ch_partner,partner_cloud,2026-02-21,2026-04-03,closed_won,89908.0,47320.0,48
+opp_00356,lead_02534,acct_02534,ch_partner,partner_cloud,2026-03-22,2026-05-03,closed_won,105924.0,50440.0,49
+opp_00357,lead_02535,acct_02535,ch_partner,partner_cloud,2026-04-23,2026-06-05,closed_won,91052.0,53560.0,50
+opp_00358,lead_02536,acct_02536,ch_partner,partner_cloud,2026-05-24,2026-07-07,closed_won,107692.0,56680.0,51
+opp_00359,lead_02537,acct_02537,ch_partner,partner_cloud,2026-06-25,2026-08-09,closed_won,125580.0,59800.0,52
+opp_00360,lead_02538,acct_02538,ch_partner,partner_cloud,2026-01-26,2026-03-13,closed_won,75140.0,44200.0,53
+opp_00361,lead_02539,acct_02539,ch_partner,partner_cloud,2026-02-27,2026-04-15,closed_won,89908.0,47320.0,54
+opp_00362,lead_02540,acct_02540,ch_partner,partner_cloud,2026-03-28,2026-05-15,closed_won,105924.0,50440.0,55
+opp_00363,lead_02541,acct_02541,ch_partner,partner_cloud,2026-04-29,2026-06-17,closed_won,91052.0,53560.0,56
+opp_00364,lead_02542,acct_02542,ch_partner,partner_cloud,2026-05-30,2026-07-19,closed_won,107692.0,56680.0,57
+opp_00365,lead_02543,acct_02543,ch_partner,partner_cloud,2026-07-01,2026-08-21,closed_lost,125580.0,59800.0,58
+opp_00366,lead_02544,acct_02544,ch_partner,partner_cloud,2026-02-01,2026-03-25,proposal,75140.0,44200.0,59
+opp_00367,lead_02545,acct_02545,ch_partner,partner_cloud,2026-02-08,2026-04-02,closed_lost,89908.0,47320.0,60
+opp_00368,lead_02546,acct_02546,ch_partner,partner_cloud,2026-03-09,2026-05-02,proposal,105924.0,50440.0,61
+opp_00369,lead_02547,acct_02547,ch_partner,partner_cloud,2026-04-10,2026-06-04,closed_lost,91052.0,53560.0,62
+opp_00370,lead_02548,acct_02548,ch_partner,partner_cloud,2026-05-11,2026-07-06,proposal,107692.0,56680.0,63
+opp_00371,lead_02549,acct_02549,ch_partner,partner_cloud,2026-06-12,2026-08-08,closed_lost,125580.0,59800.0,64
+opp_00372,lead_02550,acct_02550,ch_partner,partner_cloud,2026-01-13,2026-03-12,proposal,75140.0,44200.0,65
+opp_00373,lead_02551,acct_02551,ch_partner,partner_cloud,2026-02-14,2026-04-14,closed_lost,89908.0,47320.0,66
+opp_00374,lead_02552,acct_02552,ch_partner,partner_cloud,2026-03-15,2026-05-14,proposal,105924.0,50440.0,67
+opp_00375,lead_02553,acct_02553,ch_partner,partner_cloud,2026-04-16,2026-06-16,closed_lost,91052.0,53560.0,68
+opp_00376,lead_02554,acct_02554,ch_partner,partner_cloud,2026-05-17,2026-07-18,proposal,107692.0,56680.0,69
+opp_00377,lead_02555,acct_02555,ch_partner,partner_cloud,2026-06-18,2026-08-20,closed_lost,125580.0,59800.0,70
+opp_00378,lead_02556,acct_02556,ch_partner,partner_cloud,2026-01-19,2026-03-24,proposal,75140.0,44200.0,71
+opp_00379,lead_02557,acct_02557,ch_partner,partner_cloud,2026-02-20,2026-04-26,closed_lost,89908.0,47320.0,72
+opp_00380,lead_02558,acct_02558,ch_partner,partner_cloud,2026-03-21,2026-05-26,proposal,105924.0,50440.0,73
+opp_00381,lead_02559,acct_02559,ch_partner,partner_cloud,2026-04-22,2026-06-28,closed_lost,91052.0,53560.0,74
+opp_00382,lead_02560,acct_02560,ch_partner,partner_cloud,2026-05-23,2026-07-30,proposal,107692.0,56680.0,75
+opp_00383,lead_02561,acct_02561,ch_partner,partner_cloud,2026-06-24,2026-09-01,closed_lost,125580.0,59800.0,76
+opp_00384,lead_02562,acct_02562,ch_partner,partner_cloud,2026-01-25,2026-04-05,proposal,75140.0,44200.0,77
+opp_00385,lead_02563,acct_02563,ch_partner,partner_cloud,2026-02-26,2026-05-08,closed_lost,89908.0,47320.0,78
+opp_00386,lead_02564,acct_02564,ch_partner,partner_cloud,2026-03-27,2026-06-07,proposal,105924.0,50440.0,79
+opp_00387,lead_02565,acct_02565,ch_partner,partner_cloud,2026-04-28,2026-07-10,closed_lost,91052.0,53560.0,80
+opp_00388,lead_02566,acct_02566,ch_partner,partner_cloud,2026-05-29,2026-08-11,proposal,107692.0,56680.0,81
+opp_00389,lead_02567,acct_02567,ch_partner,partner_cloud,2026-06-30,2026-09-13,closed_lost,125580.0,59800.0,82
+opp_00390,lead_02568,acct_02568,ch_partner,partner_cloud,2026-01-31,2026-04-17,proposal,75140.0,44200.0,83
+opp_00391,lead_02569,acct_02569,ch_partner,partner_cloud,2026-03-04,2026-05-20,closed_lost,89908.0,47320.0,84
+opp_00392,lead_02570,acct_02570,ch_partner,partner_cloud,2026-03-08,2026-04-05,proposal,105924.0,50440.0,35
+opp_00393,lead_02571,acct_02571,ch_partner,partner_cloud,2026-04-09,2026-05-08,closed_lost,91052.0,53560.0,36
+opp_00394,lead_02572,acct_02572,ch_partner,partner_cloud,2026-05-10,2026-06-09,proposal,107692.0,56680.0,37
+opp_00395,lead_02573,acct_02573,ch_partner,partner_cloud,2026-06-11,2026-07-12,closed_lost,125580.0,59800.0,38
+opp_00396,lead_02574,acct_02574,ch_partner,partner_cloud,2026-01-12,2026-02-13,proposal,75140.0,44200.0,39
+opp_00397,lead_02575,acct_02575,ch_partner,partner_cloud,2026-02-13,2026-03-18,closed_lost,89908.0,47320.0,40
+opp_00398,lead_02576,acct_02576,ch_partner,partner_cloud,2026-03-14,2026-04-17,proposal,105924.0,50440.0,41
+opp_00399,lead_02577,acct_02577,ch_partner,partner_cloud,2026-04-15,2026-05-20,closed_lost,91052.0,53560.0,42
+opp_00400,lead_02578,acct_02578,ch_partner,partner_cloud,2026-05-16,2026-06-21,proposal,107692.0,56680.0,43
+opp_00401,lead_02579,acct_02579,ch_partner,partner_cloud,2026-06-17,2026-07-24,closed_lost,125580.0,59800.0,44
+opp_00402,lead_02580,acct_02580,ch_partner,partner_cloud,2026-01-18,2026-02-25,proposal,75140.0,44200.0,45
+opp_00403,lead_02581,acct_02581,ch_partner,partner_cloud,2026-02-19,2026-03-30,closed_lost,89908.0,47320.0,46
+opp_00404,lead_02582,acct_02582,ch_partner,partner_cloud,2026-03-20,2026-04-29,proposal,105924.0,50440.0,47
+opp_00405,lead_02583,acct_02583,ch_partner,partner_cloud,2026-04-21,2026-06-01,closed_lost,91052.0,53560.0,48
+opp_00406,lead_02584,acct_02584,ch_partner,partner_cloud,2026-05-22,2026-07-03,proposal,107692.0,56680.0,49
+opp_00407,lead_02585,acct_02585,ch_partner,partner_cloud,2026-06-23,2026-08-05,closed_lost,125580.0,59800.0,50
+opp_00408,lead_02665,acct_02665,ch_partner,partner_consulting,2026-01-08,2026-02-05,closed_won,75140.0,44200.0,35
+opp_00409,lead_02666,acct_02666,ch_partner,partner_consulting,2026-02-09,2026-03-10,closed_won,89908.0,47320.0,36
+opp_00410,lead_02667,acct_02667,ch_partner,partner_consulting,2026-03-10,2026-04-09,closed_won,105924.0,50440.0,37
+opp_00411,lead_02668,acct_02668,ch_partner,partner_consulting,2026-04-11,2026-05-12,closed_won,91052.0,53560.0,38
+opp_00412,lead_02669,acct_02669,ch_partner,partner_consulting,2026-05-12,2026-06-13,closed_won,107692.0,56680.0,39
+opp_00413,lead_02670,acct_02670,ch_partner,partner_consulting,2026-06-13,2026-07-16,closed_won,125580.0,59800.0,40
+opp_00414,lead_02671,acct_02671,ch_partner,partner_consulting,2026-01-14,2026-02-17,closed_won,75140.0,44200.0,41
+opp_00415,lead_02672,acct_02672,ch_partner,partner_consulting,2026-02-15,2026-03-22,closed_won,89908.0,47320.0,42
+opp_00416,lead_02673,acct_02673,ch_partner,partner_consulting,2026-03-16,2026-04-21,closed_won,105924.0,50440.0,43
+opp_00417,lead_02674,acct_02674,ch_partner,partner_consulting,2026-04-17,2026-05-24,closed_won,91052.0,53560.0,44
+opp_00418,lead_02675,acct_02675,ch_partner,partner_consulting,2026-05-18,2026-06-25,closed_won,107692.0,56680.0,45
+opp_00419,lead_02676,acct_02676,ch_partner,partner_consulting,2026-06-19,2026-07-28,closed_won,125580.0,59800.0,46
+opp_00420,lead_02677,acct_02677,ch_partner,partner_consulting,2026-01-20,2026-03-01,proposal,75140.0,44200.0,47
+opp_00421,lead_02678,acct_02678,ch_partner,partner_consulting,2026-02-21,2026-04-03,closed_lost,89908.0,47320.0,48
+opp_00422,lead_02679,acct_02679,ch_partner,partner_consulting,2026-03-22,2026-05-03,proposal,105924.0,50440.0,49
+opp_00423,lead_02680,acct_02680,ch_partner,partner_consulting,2026-04-23,2026-06-05,closed_lost,91052.0,53560.0,50
+opp_00424,lead_02681,acct_02681,ch_partner,partner_consulting,2026-05-24,2026-07-07,proposal,107692.0,56680.0,51
+opp_00425,lead_02682,acct_02682,ch_partner,partner_consulting,2026-06-25,2026-08-09,closed_lost,125580.0,59800.0,52
+opp_00426,lead_02683,acct_02683,ch_partner,partner_consulting,2026-01-26,2026-03-13,proposal,75140.0,44200.0,53
+opp_00427,lead_02684,acct_02684,ch_partner,partner_consulting,2026-02-27,2026-04-15,closed_lost,89908.0,47320.0,54
+opp_00428,lead_02685,acct_02685,ch_partner,partner_consulting,2026-03-28,2026-05-15,proposal,105924.0,50440.0,55
+opp_00429,lead_02686,acct_02686,ch_partner,partner_consulting,2026-04-29,2026-06-17,closed_lost,91052.0,53560.0,56
+opp_00430,lead_02687,acct_02687,ch_partner,partner_consulting,2026-05-30,2026-07-19,proposal,107692.0,56680.0,57
+opp_00431,lead_02688,acct_02688,ch_partner,partner_consulting,2026-07-01,2026-08-21,closed_lost,125580.0,59800.0,58
+opp_00432,lead_02689,acct_02689,ch_partner,partner_consulting,2026-02-01,2026-03-25,proposal,75140.0,44200.0,59
+opp_00433,lead_02690,acct_02690,ch_partner,partner_consulting,2026-02-08,2026-04-02,closed_lost,89908.0,47320.0,60
+opp_00434,lead_02691,acct_02691,ch_partner,partner_consulting,2026-03-09,2026-05-02,proposal,105924.0,50440.0,61
+opp_00435,lead_02692,acct_02692,ch_partner,partner_consulting,2026-04-10,2026-06-04,closed_lost,91052.0,53560.0,62
+opp_00436,lead_02693,acct_02693,ch_partner,partner_consulting,2026-05-11,2026-07-06,proposal,107692.0,56680.0,63
+opp_00437,lead_02694,acct_02694,ch_partner,partner_consulting,2026-06-12,2026-08-08,closed_lost,125580.0,59800.0,64
+opp_00438,lead_02695,acct_02695,ch_partner,partner_consulting,2026-01-13,2026-03-12,proposal,75140.0,44200.0,65
+opp_00439,lead_02696,acct_02696,ch_partner,partner_consulting,2026-02-14,2026-04-14,closed_lost,89908.0,47320.0,66
+opp_00440,lead_02697,acct_02697,ch_partner,partner_consulting,2026-03-15,2026-05-14,proposal,105924.0,50440.0,67
+opp_00441,lead_02698,acct_02698,ch_partner,partner_consulting,2026-04-16,2026-06-16,closed_lost,91052.0,53560.0,68
+opp_00442,lead_02699,acct_02699,ch_partner,partner_consulting,2026-05-17,2026-07-18,proposal,107692.0,56680.0,69
+opp_00443,lead_02700,acct_02700,ch_partner,partner_consulting,2026-06-18,2026-08-20,closed_lost,125580.0,59800.0,70
+opp_00444,lead_02701,acct_02701,ch_partner,partner_consulting,2026-01-19,2026-03-24,proposal,75140.0,44200.0,71
+opp_00445,lead_02702,acct_02702,ch_partner,partner_consulting,2026-02-20,2026-04-26,closed_lost,89908.0,47320.0,72
+opp_00446,lead_02703,acct_02703,ch_partner,partner_consulting,2026-03-21,2026-05-26,proposal,105924.0,50440.0,73
+opp_00447,lead_02779,acct_02779,ch_webinar,webinar_exec,2026-01-08,2026-02-05,closed_won,47685.0,28050.0,35
+opp_00448,lead_02780,acct_02780,ch_webinar,webinar_exec,2026-02-09,2026-03-10,closed_won,57057.0,30030.0,36
+opp_00449,lead_02781,acct_02781,ch_webinar,webinar_exec,2026-03-10,2026-04-09,closed_won,67221.0,32010.0,37
+opp_00450,lead_02782,acct_02782,ch_webinar,webinar_exec,2026-04-11,2026-05-12,closed_won,57783.0,33990.0,38
+opp_00451,lead_02783,acct_02783,ch_webinar,webinar_exec,2026-05-12,2026-06-13,closed_won,68343.0,35970.0,39
+opp_00452,lead_02784,acct_02784,ch_webinar,webinar_exec,2026-06-13,2026-07-16,closed_won,79695.0,37950.0,40
+opp_00453,lead_02785,acct_02785,ch_webinar,webinar_exec,2026-01-14,2026-02-17,proposal,47685.0,28050.0,41
+opp_00454,lead_02786,acct_02786,ch_webinar,webinar_exec,2026-02-15,2026-03-22,closed_lost,57057.0,30030.0,42
+opp_00455,lead_02787,acct_02787,ch_webinar,webinar_exec,2026-03-16,2026-04-21,proposal,67221.0,32010.0,43
+opp_00456,lead_02788,acct_02788,ch_webinar,webinar_exec,2026-04-17,2026-05-24,closed_lost,57783.0,33990.0,44
+opp_00457,lead_02789,acct_02789,ch_webinar,webinar_exec,2026-05-18,2026-06-25,proposal,68343.0,35970.0,45
+opp_00458,lead_02790,acct_02790,ch_webinar,webinar_exec,2026-06-19,2026-07-28,closed_lost,79695.0,37950.0,46
+opp_00459,lead_02791,acct_02791,ch_webinar,webinar_exec,2026-01-20,2026-03-01,proposal,47685.0,28050.0,47
+opp_00460,lead_02792,acct_02792,ch_webinar,webinar_exec,2026-02-21,2026-04-03,closed_lost,57057.0,30030.0,48
+opp_00461,lead_02793,acct_02793,ch_webinar,webinar_exec,2026-03-22,2026-05-03,proposal,67221.0,32010.0,49
+opp_00462,lead_02794,acct_02794,ch_webinar,webinar_exec,2026-04-23,2026-06-05,closed_lost,57783.0,33990.0,50
+opp_00463,lead_02795,acct_02795,ch_webinar,webinar_exec,2026-05-24,2026-07-07,proposal,68343.0,35970.0,51
+opp_00464,lead_02796,acct_02796,ch_webinar,webinar_exec,2026-06-25,2026-08-09,closed_lost,79695.0,37950.0,52
+opp_00465,lead_02797,acct_02797,ch_webinar,webinar_exec,2026-01-26,2026-03-13,proposal,47685.0,28050.0,53
+opp_00466,lead_02798,acct_02798,ch_webinar,webinar_exec,2026-02-27,2026-04-15,closed_lost,57057.0,30030.0,54
+opp_00467,lead_02799,acct_02799,ch_webinar,webinar_exec,2026-03-28,2026-05-15,proposal,67221.0,32010.0,55
+opp_00468,lead_02800,acct_02800,ch_webinar,webinar_exec,2026-04-29,2026-06-17,closed_lost,57783.0,33990.0,56
+opp_00469,lead_02801,acct_02801,ch_webinar,webinar_exec,2026-05-30,2026-07-19,proposal,68343.0,35970.0,57
+opp_00470,lead_02802,acct_02802,ch_webinar,webinar_exec,2026-07-01,2026-08-21,closed_lost,79695.0,37950.0,58
+opp_00471,lead_02803,acct_02803,ch_webinar,webinar_exec,2026-02-01,2026-03-25,proposal,47685.0,28050.0,59
+opp_00472,lead_02804,acct_02804,ch_webinar,webinar_exec,2026-02-08,2026-04-02,closed_lost,57057.0,30030.0,60
+opp_00473,lead_02805,acct_02805,ch_webinar,webinar_exec,2026-03-09,2026-05-02,proposal,67221.0,32010.0,61
+opp_00474,lead_02806,acct_02806,ch_webinar,webinar_exec,2026-04-10,2026-06-04,closed_lost,57783.0,33990.0,62
+opp_00475,lead_02807,acct_02807,ch_webinar,webinar_exec,2026-05-11,2026-07-06,proposal,68343.0,35970.0,63
+opp_00476,lead_02808,acct_02808,ch_webinar,webinar_exec,2026-06-12,2026-08-08,closed_lost,79695.0,37950.0,64
+opp_00477,lead_02809,acct_02809,ch_webinar,webinar_exec,2026-01-13,2026-03-12,proposal,47685.0,28050.0,65
+opp_00478,lead_02810,acct_02810,ch_webinar,webinar_exec,2026-02-14,2026-04-14,closed_lost,57057.0,30030.0,66
+opp_00479,lead_02811,acct_02811,ch_webinar,webinar_exec,2026-03-15,2026-05-14,proposal,67221.0,32010.0,67
+opp_00480,lead_02812,acct_02812,ch_webinar,webinar_exec,2026-04-16,2026-06-16,closed_lost,57783.0,33990.0,68
+opp_00481,lead_02813,acct_02813,ch_webinar,webinar_exec,2026-05-17,2026-07-18,proposal,68343.0,35970.0,69
+opp_00482,lead_02814,acct_02814,ch_webinar,webinar_exec,2026-06-18,2026-08-20,closed_lost,79695.0,37950.0,70
+opp_00483,lead_02815,acct_02815,ch_webinar,webinar_exec,2026-01-19,2026-03-24,proposal,47685.0,28050.0,71
+opp_00484,lead_02937,acct_02937,ch_webinar,webinar_ops,2026-01-08,2026-02-05,closed_won,47685.0,28050.0,35
+opp_00485,lead_02938,acct_02938,ch_webinar,webinar_ops,2026-02-09,2026-03-10,closed_lost,57057.0,30030.0,36
+opp_00486,lead_02939,acct_02939,ch_webinar,webinar_ops,2026-03-10,2026-04-09,proposal,67221.0,32010.0,37
+opp_00487,lead_02940,acct_02940,ch_webinar,webinar_ops,2026-04-11,2026-05-12,closed_lost,57783.0,33990.0,38
+opp_00488,lead_02941,acct_02941,ch_webinar,webinar_ops,2026-05-12,2026-06-13,proposal,68343.0,35970.0,39
+opp_00489,lead_02942,acct_02942,ch_webinar,webinar_ops,2026-06-13,2026-07-16,closed_lost,79695.0,37950.0,40
+opp_00490,lead_02943,acct_02943,ch_webinar,webinar_ops,2026-01-14,2026-02-17,proposal,47685.0,28050.0,41
+opp_00491,lead_02944,acct_02944,ch_webinar,webinar_ops,2026-02-15,2026-03-22,closed_lost,57057.0,30030.0,42
+opp_00492,lead_02945,acct_02945,ch_webinar,webinar_ops,2026-03-16,2026-04-21,proposal,67221.0,32010.0,43

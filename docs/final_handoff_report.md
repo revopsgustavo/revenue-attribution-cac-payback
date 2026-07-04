@@ -1,18 +1,14 @@
 # Final Handoff Report
 
 ## Status
-Projeto CRM Data Quality and Revenue Governance revisado para vitrine GitHub, com dados sintéticos, dashboard, métricas, consultor de gaps, IA consultora rule-based, documentação e testes.
+Projeto Revenue Attribution and CAC Payback revisado para vitrine GitHub e nivel especialista.
 
-## Specialist GitHub Readiness Review
-- estrutura corrigida para raiz: sim
-- README revisado: sim
-- análise executiva revisada: sim
-- IA consultora revisada: sim
-- consultor de gaps revisado: sim
-- metrics dictionary revisado: sim
-- formatação PT-BR revisada: sim
-- dashboard validado: sim
-- testes passaram: sim
-- pronto para commit: sim
-- push realizado: pendente até execução do git push
-- pendências restantes: validar visualmente o dashboard no navegador se necessário
+## Validacoes Funcionais
+- Dados regenerados com 3137 leads, 492 oportunidades e 137 clientes.
+- Data quality report com zero falhas.
+- Consultant gap log gerado com 4 gaps.
+- AI consultant analysis gerada a partir dos gaps atuais.
+- Dashboard Streamlit alinhado ao case de atribuicao e CAC Payback.
+
+## Observacao Git
+O remote `origin` local aponta para outro repositorio. O push deve ser feito diretamente para `https://github.com/revopsgustavo/revenue-attribution-cac-payback.git` ou o remote deve ser corrigido manualmente depois.

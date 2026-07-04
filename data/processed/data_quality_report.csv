@@ -10,15 +10,19 @@ channels,not_null:channel_id,pass,channel_id
 leads,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\leads.csv
 leads,column_exists:lead_id,pass,lead_id
 leads,not_null:lead_id,pass,lead_id
-leads,column_exists:channel_id,fail,channel_id
-leads,column_exists:campaign_id,fail,campaign_id
+leads,column_exists:channel_id,pass,channel_id
+leads,not_null:channel_id,pass,channel_id
+leads,column_exists:campaign_id,pass,campaign_id
+leads,not_null:campaign_id,pass,campaign_id
 leads,column_exists:created_date,pass,created_date
 opportunities,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\opportunities.csv
 opportunities,column_exists:opportunity_id,pass,opportunity_id
 opportunities,not_null:opportunity_id,pass,opportunity_id
-opportunities,column_exists:lead_id,fail,lead_id
-opportunities,column_exists:channel_id,fail,channel_id
-opportunities,column_exists:pipeline_value,fail,pipeline_value
+opportunities,column_exists:lead_id,pass,lead_id
+opportunities,not_null:lead_id,pass,lead_id
+opportunities,column_exists:channel_id,pass,channel_id
+opportunities,not_null:channel_id,pass,channel_id
+opportunities,column_exists:pipeline_value,pass,pipeline_value
 customers,file_exists,pass,C:\Users\Gustavo Lazzaroto\Documents\Playground\data\processed\customers.csv
 customers,column_exists:customer_id,pass,customer_id
 customers,not_null:customer_id,pass,customer_id
@@ -57,6 +61,6 @@ cohorts,column_exists:cohort_month,pass,cohort_month
 cohorts,column_exists:acquisition_channel_id,pass,acquisition_channel_id
 cohorts,not_null:acquisition_channel_id,pass,acquisition_channel_id
 campaigns,valid_channel_id,pass,channel_id
-leads,valid_channel_id,fail,channel_id
+leads,valid_channel_id,pass,channel_id
 marketing_spend,valid_channel_id,pass,channel_id
 touchpoints,valid_channel_id,pass,channel_id
