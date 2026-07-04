@@ -1,7 +1,7 @@
 # AI Consultant Analysis
 
 ## Veredito executivo
-Os dados sugerem que o CRM ainda não deve ser tratado como fonte plenamente confiável para decisões executivas sem uma onda de saneamento prévia. O score geral está em 74.0/100, com 7 gaps críticos, 11 gaps altos e R$ 3.270.414,00 em pipeline associado a problemas de qualidade de dados. A análise é rule-based e gera hipóteses para validação, não confirmação de causa raiz.
+Os dados sugerem que o CRM ainda não deve ser tratado como fonte plenamente confiável para decisões executivas sem uma onda de saneamento prévia. O score geral está em 64.0/100, com 8 gaps críticos, 10 gaps altos e R$ 1.543.800,00 em pipeline associado a problemas de qualidade de dados. A análise é rule-based e gera hipóteses para validação, não confirmação de causa raiz.
 
 ## Leitura da operação
 A evidência disponível aponta para risco combinado em completude de dados, ownership, higiene de pipeline, forecast governance, stage/probability, close date hygiene e processo de remediação. O ponto central para RevOps é que CRM Data Quality não é um checklist técnico: é fundamento de Revenue Governance, Forecast Reliability e Pipeline Hygiene.
@@ -13,21 +13,21 @@ A evidência disponível aponta para risco combinado em completude de dados, own
 - **forecast_governance | opportunities_without_close_date**: Há 5 oportunidades sem close_date. Ação recomendada: Bloquear forecast de oportunidades abertas sem close_date validada.
 - **revenue_integrity | closed_won_without_amount**: Há 2 Closed Won sem amount válido. Ação recomendada: Corrigir amount antes de report executivo.
 - **close_date_hygiene | open_opportunities_with_past_close_date**: Há 4 oportunidades abertas com close_date no passado. Ação recomendada: Revisar oportunidades vencidas e exigir reason code.
-- **forecast_governance | forecast_category_inconsistencies**: Há 6 forecast categories inconsistentes com stage. Ação recomendada: Criar matriz stage x forecast category.
-- **revenue_risk | revenue_at_risk_from_data_quality**: Pipeline associado a problemas de qualidade soma R$ 3,270,414. Ação recomendada: Priorizar correção por valor em risco.
+- **forecast_governance | forecast_category_inconsistencies**: Há 3 forecast categories inconsistentes com stage. Ação recomendada: Criar matriz stage x forecast category.
+- **forecast_governance | forecast_reliability_score**: Forecast reliability score está em 88.0/100. Ação recomendada: Rodar forecast cleanup antes da próxima reunião executiva.
+- **revenue_risk | revenue_at_risk_from_data_quality**: Pipeline associado a problemas de qualidade soma R$ 1,543,800. Ação recomendada: Priorizar correção por valor em risco.
 
 ### Altos
-- **lead_governance | lead_missing_source_rate**: A evidência disponível aponta para 10.8% dos leads sem source. Ação recomendada: Bloquear criação ou roteamento de lead sem source.
+- **lead_governance | lead_missing_source_rate**: A evidência disponível aponta para 13 leads sem source. Ação recomendada: Bloquear criação ou roteamento de lead sem source.
 - **deduplication | duplicate_accounts**: Os dados sugerem 4 contas duplicadas por nome e domínio. Ação recomendada: Consolidar contas duplicadas e criar matching por domínio.
 - **ownership | accounts_without_owner**: Há 4 contas sem owner. Ação recomendada: Fazer backfill de owner e criar regra diária de atribuição.
 - **pipeline_hygiene | opportunities_without_next_step**: Há 5 oportunidades abertas sem next_step. Ação recomendada: Exigir next_step datado em pipeline review.
-- **pipeline_hygiene | stale_opportunities**: Há 38 oportunidades paradas há mais de 20 dias. Ação recomendada: Criar limpeza semanal de oportunidades paradas.
-- **pipeline_hygiene | advanced_stage_without_activity**: Há 7 oportunidades em estágio avançado sem atividade recente. Ação recomendada: Revisar deals avançados sem atividade.
+- **pipeline_hygiene | stale_opportunities**: Há 34 oportunidades paradas há mais de 20 dias. Ação recomendada: Criar limpeza semanal de oportunidades paradas.
 - **loss_governance | closed_lost_without_loss_reason**: Há 3 Closed Lost sem loss_reason. Ação recomendada: Exigir loss_reason e revisar taxonomia de perdas.
 - **revenue_integrity | opportunities_with_zero_amount**: Existem 6 oportunidades com amount zerado. Ação recomendada: Definir stage gate para amount.
-- **forecast_governance | invalid_stage_probability_combinations**: Há 7 probabilidades incompatíveis com stage. Ação recomendada: Padronizar probability por stage.
-- **close_date_hygiene | manual_close_date_change_rate**: Alterações manuais de close_date representam 84.0% dos eventos. Ação recomendada: Exigir reason code para pushes.
-- **remediation_governance | overdue_remediation_tasks**: Há 4 tarefas de remediação atrasadas. Ação recomendada: Criar SLA semanal de remediação.
+- **forecast_governance | invalid_stage_probability_combinations**: Há 14 probabilidades incompatíveis com stage. Ação recomendada: Padronizar probability por stage.
+- **close_date_hygiene | manual_close_date_change_rate**: Alterações manuais de close_date representam 50.6% dos eventos. Ação recomendada: Exigir reason code para pushes.
+- **remediation_governance | overdue_remediation_tasks**: Há 3 tarefas de remediação atrasadas. Ação recomendada: Criar SLA semanal de remediação.
 
 ### Médios
 - **deduplication | duplicate_leads**: Há indícios de 5 leads duplicados por email. Ação recomendada: Ativar dedupe por email antes do roteamento.
@@ -42,14 +42,14 @@ A evidência disponível aponta para risco combinado em completude de dados, own
 - Tarefas de remediação atrasadas sugerem oportunidade de fortalecer accountability operacional.
 
 ## Evidências observadas
-- CRM Data Quality Score: 74.0/100.
-- Forecast Reliability Score: 92.8/100.
-- Pipeline Hygiene Score: 82.4/100.
+- CRM Data Quality Score: 64.0/100.
+- Forecast Reliability Score: 68.8/100.
+- Pipeline Hygiene Score: 46.1/100.
 - Leads sem source: 10,8%.
 - Taxa de duplicidade de leads: 4,2%.
 - Taxa de duplicidade de contas: 8,9%.
-- Mudanças manuais de close_date no audit log: 84,0%.
-- Taxa de conclusão de remediação: 16,7%.
+- Mudanças manuais de close_date no audit log: 50,6%.
+- Taxa de conclusão de remediação: 20,0%.
 
 ## Evidências ausentes
 - Regras reais do CRM e obrigatoriedade por stage.

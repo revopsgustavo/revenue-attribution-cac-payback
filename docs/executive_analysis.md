@@ -1,7 +1,7 @@
 # Análise Executiva
 
 ## Veredito executivo
-Os dados sugerem que o CRM ainda não está plenamente confiável para decisões executivas sem saneamento prévio. O score geral de qualidade está em 74.0/100, o Forecast Reliability Score está em 92.8/100 e o Pipeline Hygiene Score está em 82.4/100. A evidência disponível aponta para R$ 3.270.414,00 em pipeline associado a problemas de qualidade de dados.
+Os dados sugerem que o CRM ainda não está plenamente confiável para decisões executivas sem saneamento prévio. O score geral de qualidade está em 64.0/100, o Forecast Reliability Score está em 68.8/100 e o Pipeline Hygiene Score está em 46.1/100. A evidência disponível aponta para R$ 1.543.800,00 em pipeline associado a problemas de qualidade de dados.
 
 ## Diagnóstico do período
 O risco principal não está apenas na existência de campos incompletos, mas no impacto desses problemas sobre forecast, pipeline hygiene, ownership e confiabilidade da tomada de decisão. CRM Data Quality deve ser tratada como governança de receita, não como checklist técnico.
@@ -15,16 +15,16 @@ O risco principal não está apenas na existência de campos incompletos, mas no
 - Oportunidades sem owner: 4.
 - Oportunidades sem close_date: 5.
 - Oportunidades sem next_step: 5.
-- Oportunidades paradas: 38.
-- Estágio avançado sem atividade recente: 7.
+- Oportunidades paradas: 34.
+- Estágio avançado sem atividade recente: 6.
 - Closed Won sem amount: 2.
 - Closed Lost sem loss_reason: 3.
 - Amount zerado em oportunidade: 6.
 - Oportunidades abertas com close_date no passado: 4.
-- Forecast category inconsistente: 6.
-- Stage/probability incompatível: 7.
-- Mudanças manuais de close_date: 84,0%.
-- Tarefas de remediação atrasadas: 4.
+- Forecast category inconsistente: 3.
+- Stage/probability incompatível: 14.
+- Mudanças manuais de close_date: 50,6%.
+- Tarefas de remediação atrasadas: 3.
 
 ## Principais achados
 - Oportunidades concentram o maior risco porque afetam diretamente forecast, pipeline, amount, close_date e accountability comercial.

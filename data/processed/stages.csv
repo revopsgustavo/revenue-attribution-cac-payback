@@ -1,0 +1,10 @@
+stage,default_probability,default_forecast_category
+Prospecting,0.1,Pipeline
+Discovery,0.25,Pipeline
+Solution,0.45,Best Case
+Proposal,0.6,Best Case
+Negotiation,0.75,Best Case
+Procurement,0.85,Commit
+Contract,0.95,Commit
+Closed Won,1.0,Closed
+Closed Lost,0.0,Omitted

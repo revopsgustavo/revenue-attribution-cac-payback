@@ -1,0 +1,2 @@
+check_id,object,field,check_type,severity,status
+chk_001,leads,source,required_field,critical,active
